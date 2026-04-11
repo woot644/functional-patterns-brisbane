@@ -1,0 +1,11 @@
+{
+  "name": "functional-patterns-brisbane",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/styles.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

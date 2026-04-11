@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0A0A0A;
+    color: #E5E5E5;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-dark-900 font-semibold px-7 py-3.5 rounded-lg transition-all duration-200 text-sm uppercase tracking-wider;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border border-white/20 text-white hover:bg-white/10 font-medium px-7 py-3.5 rounded-lg transition-all duration-200 text-sm;
+  }
+  .btn-phone {
+    @apply inline-flex items-center justify-center gap-2 bg-white text-dark-900 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200;
+  }
+  .section-dark {
+    @apply px-4 sm:px-6 lg:px-8 py-20 sm:py-24 bg-dark-900;
+  }
+  .section-darker {
+    @apply px-4 sm:px-6 lg:px-8 py-20 sm:py-24 bg-dark-950;
+  }
+  .section-light {
+    @apply px-4 sm:px-6 lg:px-8 py-20 sm:py-24 bg-warm-50 text-dark-900;
+  }
+  .section-charcoal {
+    @apply px-4 sm:px-6 lg:px-8 py-20 sm:py-24 bg-dark-700;
+  }
+  .container-narrow {
+    @apply max-w-6xl mx-auto;
+  }
+  .nav-link {
+    @apply text-gray-300 hover:text-white font-medium transition-colors duration-200 text-sm;
+  }
+  .card-dark {
+    @apply bg-dark-700 rounded-xl p-6 border border-white/5 hover:border-gold-500/30 transition-all duration-300;
+  }
+  .stat-number {
+    @apply text-4xl sm:text-5xl font-bold text-gold-500;
+  }
+  .stat-label {
+    @apply text-xs uppercase tracking-widest text-gray-400 mt-1;
+  }
+  .section-label {
+    @apply text-gold-500 text-xs font-semibold uppercase tracking-[0.2em] mb-3;
+  }
+}

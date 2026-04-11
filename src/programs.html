@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Programs — Functional Patterns Brisbane</title>
+  <meta name="description" content="Small group classes with hands-on correction at Functional Patterns Brisbane. Bells & Bands, Balance & Symmetry, Core & Mobility programs for chronic pain, posture and movement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-dark-950/90 backdrop-blur-md border-b border-white/5">
+    <nav class="px-4 sm:px-6 lg:px-8">
+      <div class="container-narrow flex items-center justify-between h-16 sm:h-20">
+        <!-- Logo -->
+        <a href="/" class="text-white font-bold text-lg tracking-tight">
+          <span class="text-gold-500">FP</span> Brisbane
+        </a>
+        <!-- Desktop nav -->
+        <div class="hidden lg:flex items-center gap-6">
+          <a href="/" class="nav-link">Home</a>
+          <a href="how-we-work" class="nav-link">How We Work</a>
+          <a href="what-we-treat" class="nav-link">What We Treat</a>
+          <a href="results" class="nav-link">Results</a>
+          <a href="programs" class="nav-link text-white">Programs</a>
+          <a href="team" class="nav-link">Our Team</a>
+          <a href="book" class="btn-primary py-2.5 px-5 text-xs">Book Assessment</a>
+        </div>
+        <!-- Mobile -->
+        <div class="flex items-center gap-3 lg:hidden">
+          <a href="book" class="btn-primary py-2 px-4 text-xs">Book</a>
+          <button id="mobile-menu-btn" class="p-2 text-white" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-white/5 bg-dark-950">
+      <div class="px-4 py-4 space-y-1">
+        <a href="/" class="block py-3 nav-link">Home</a>
+        <a href="how-we-work" class="block py-3 nav-link">How We Work</a>
+        <a href="what-we-treat" class="block py-3 nav-link">What We Treat</a>
+        <a href="results" class="block py-3 nav-link">Results</a>
+        <a href="programs" class="block py-3 text-white font-medium">Programs</a>
+        <a href="team" class="block py-3 nav-link">Our Team</a>
+        <a href="contact" class="block py-3 nav-link">Contact</a>
+        <a href="online" class="block py-3 nav-link">Online Training</a>
+        <a href="tel:0433801181" class="block py-3 text-gold-500 font-semibold">0433 801 181</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero (dark, compact) -->
+  <section class="relative flex items-center bg-dark-950 overflow-hidden pt-20">
+    <div class="relative px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full">
+      <div class="container-narrow text-center">
+        <p class="section-label">6-Week Structured Training</p>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-[1.1] mb-4">
+          Group <span class="text-gold-500">Programs</span>
+        </h1>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Small group classes with hands-on correction. Every program is built on Functional Patterns biomechanics — addressing root causes, not just symptoms.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Grid -->
+  <section class="section-charcoal">
+    <div class="container-narrow">
+      <div class="text-center mb-14">
+        <p class="section-label">Choose Your Program</p>
+        <h2 class="text-3xl sm:text-4xl font-bold">3 Programs, One Goal: Better Movement</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Bells & Bands -->
+        <div class="card-dark flex flex-col">
+          <div style="width:48px;height:48px;border-radius:9999px;background:rgba(196,154,60,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <span style="color:#c49a3c;font-size:1.25rem;">&#10022;</span>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-2">Bells &amp; Bands <span class="text-gold-500 text-sm font-semibold">(Ladies Only)</span></h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            A targeted program for women focusing on core strength and glute activation using kettlebells and resistance bands. Gentle but effective — designed around pelvic stability and functional strength.
+          </p>
+          <div class="mb-6">
+            <p class="text-xs text-gold-500 font-semibold uppercase tracking-wide mb-2">Who it's for</p>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-gold-500 mt-0.5 flex-shrink-0 text-sm">&#10003;</span>
+                <span class="text-gray-400 text-sm">Women wanting core &amp; glute focus</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold-500 mt-0.5 flex-shrink-0 text-sm">&#10003;</span>
+                <span class="text-gray-400 text-sm">Pelvic floor &amp; stability concerns</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold-500 mt-0.5 flex-shrink-0 text-sm">&#10003;</span>
+                <span class="text-gray-400 text-sm">Beginners welcome</span>
+              </li>
+            </ul>
+          </div>
+          <div style="margin-top:auto;">
+            <a href="contact" class="btn-primary py-3 px-6 text-xs w-full">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Balance & Symmetry -->
+        <div class="card-dark flex flex-col">
+          <div style="width:48px;height:48px;border-radius:9999px;background:rgba(196,154,60,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <span style="color:#c49a3c;font-size:1.25rem;">&#10022;</span>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-2">Balance &amp; Symmetry</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            Address long-term imbalances and asymmetries through structured group training. Targets scoliosis, hip rotation, uneven strength, and full-body coordination.
+          </p>
+          <div class="mb-6">
+            <p class="text-xs text-gold-500 font-semibold uppercase tracking-wide mb-2">Who it's for</p>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-gold-500 mt-0.5 flex-shrink-0 text-sm">&#10003;</span>
+                <span class="text-gray-400 text-sm">Scoliosis &amp; spinal asymmetry</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold-500 mt-0.5 flex-shrink-0 text-sm">&#10003;</span>
+                <span class="text-gray-400 text-sm">Hip rotation &amp; uneven strength</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold-500 mt-0.5 flex-shrink-0 text-sm">&#10003;</span>
+                <span class="text-gray-400 text-sm">Those wanting full-body coordination</span>
+              </li>
+            </ul>
+          </div>
+          <div style="margin-top:auto;">
+            <a href="contact" class="btn-primary py-3 px-6 text-xs w-full">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Core & Mobility -->
+        <div class="card-dark flex flex-col">
+          <div style="width:48px;height:48px;border-radius:9999px;background:rgba(196,154,60,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <span style="color:#c49a3c;font-size:1.25rem;">&#10022;</span>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-2">Core &amp; Mobility</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            Build true core function and improve overall mobility through functional movement patterns. Focused on ribcage mechanics, hip mobility, stability and control.
+          </p>
+          <div class="mb-6">
+            <p class="text-xs text-gold-500 font-semibold uppercase tracking-wide mb-2">Who it's for</p>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-gold-500 mt-0.5 flex-shrink-0 text-sm">&#10003;</span>
+                <span class="text-gray-400 text-sm">Core weakness &amp; stiffness</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold-500 mt-0.5 flex-shrink-0 text-sm">&#10003;</span>
+                <span class="text-gray-400 text-sm">Ribcage &amp; hip mobility issues</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold-500 mt-0.5 flex-shrink-0 text-sm">&#10003;</span>
+                <span class="text-gray-400 text-sm">Anyone wanting more stability &amp; control</span>
+              </li>
+            </ul>
+          </div>
+          <div style="margin-top:auto;">
+            <a href="contact" class="btn-primary py-3 px-6 text-xs w-full">Enquire Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What These Classes Improve -->
+  <section class="section-light">
+    <div class="container-narrow">
+      <div class="text-center mb-14">
+        <p class="text-gold-600 text-xs font-semibold uppercase tracking-[0.2em] mb-3">Real Outcomes</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-dark-900 mb-4">What These Classes Improve</h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">Every program is designed around measurable improvement in how your body moves, feels, and functions.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
+          <div style="width:48px;height:48px;border-radius:9999px;background:rgba(166,124,46,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+            <svg style="width:24px;height:24px;color:#a67c2e;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-semibold text-dark-900 mb-1">Reduced Chronic Pain</h3>
+          <p class="text-gray-500 text-sm">Address the root cause so pain doesn't keep returning</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
+          <div style="width:48px;height:48px;border-radius:9999px;background:rgba(166,124,46,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+            <svg style="width:24px;height:24px;color:#a67c2e;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-semibold text-dark-900 mb-1">Improved Posture</h3>
+          <p class="text-gray-500 text-sm">Realign your structure through corrective movement</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
+          <div style="width:48px;height:48px;border-radius:9999px;background:rgba(166,124,46,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+            <svg style="width:24px;height:24px;color:#a67c2e;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-semibold text-dark-900 mb-1">Improved Symmetry &amp; Strength</h3>
+          <p class="text-gray-500 text-sm">Balance both sides of the body for even muscle development</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
+          <div style="width:48px;height:48px;border-radius:9999px;background:rgba(166,124,46,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+            <svg style="width:24px;height:24px;color:#a67c2e;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-semibold text-dark-900 mb-1">Improved Coordination &amp; Balance</h3>
+          <p class="text-gray-500 text-sm">Train your nervous system for better movement control</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
+          <div style="width:48px;height:48px;border-radius:9999px;background:rgba(166,124,46,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+            <svg style="width:24px;height:24px;color:#a67c2e;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-semibold text-dark-900 mb-1">Functional Movement Patterns</h3>
+          <p class="text-gray-500 text-sm">Move the way humans are designed to move</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
+          <div style="width:48px;height:48px;border-radius:9999px;background:rgba(166,124,46,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+            <svg style="width:24px;height:24px;color:#a67c2e;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-semibold text-dark-900 mb-1">Increased Mobility &amp; Stability</h3>
+          <p class="text-gray-500 text-sm">Greater range of motion with the control to use it</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Your Trainers -->
+  <section class="section-dark">
+    <div class="container-narrow">
+      <div class="text-center mb-14">
+        <p class="section-label">Your Coaches</p>
+        <h2 class="text-3xl sm:text-4xl font-bold">Meet Your Trainers</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Keriann -->
+        <div class="card-dark">
+          <div style="width:56px;height:56px;border-radius:9999px;background:rgba(196,154,60,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <span style="color:#c49a3c;font-size:1.5rem;font-weight:700;">K</span>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-1">Keriann Zipperer</h3>
+          <p class="text-gold-500 text-xs font-semibold uppercase tracking-wide mb-3">HBS1 Certified &bull; Clinical Nutrition</p>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            HBS1 certified practitioner with a Bachelor of Health Science in Clinical Nutrition. Keriann brings a deep understanding of how nutrition and movement work together.
+          </p>
+          <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1rem;">
+            <div class="flex gap-1 mb-3">
+              <span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed" style="font-style:italic;">"Found significant improvement in my chronic pain and movement quality through the group programs."</p>
+            <p class="text-white text-sm font-semibold mt-2">— Kathy</p>
+          </div>
+        </div>
+
+        <!-- Harj -->
+        <div class="card-dark">
+          <div style="width:56px;height:56px;border-radius:9999px;background:rgba(196,154,60,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <span style="color:#c49a3c;font-size:1.5rem;font-weight:700;">H</span>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-1">Harj Sethi</h3>
+          <p class="text-gold-500 text-xs font-semibold uppercase tracking-wide mb-3">Detail-Oriented &bull; Analytical Approach</p>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            Harj specialises in functional movement with a detail-oriented, analytical approach. His precision in correcting movement patterns helps clients achieve lasting structural change.
+          </p>
+          <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1rem;">
+            <div class="flex gap-1 mb-3">
+              <span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed" style="font-style:italic;">"Experienced lasting results from the structured 6-week program format."</p>
+            <p class="text-white text-sm font-semibold mt-2">— Jennifer Shard</p>
+          </div>
+        </div>
+
+        <!-- Sam -->
+        <div class="card-dark">
+          <div style="width:56px;height:56px;border-radius:9999px;background:rgba(196,154,60,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <span style="color:#c49a3c;font-size:1.5rem;font-weight:700;">S</span>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-1">Sam Marsh</h3>
+          <p class="text-gold-500 text-xs font-semibold uppercase tracking-wide mb-3">HBS1 Certified &bull; Holistic Training</p>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            HBS1 certified with a holistic approach to corrective training. Sam focuses on the full picture — how your entire body connects and moves as one integrated system.
+          </p>
+          <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1rem;">
+            <div class="flex gap-1 mb-3">
+              <span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span><span class="text-gold-500">&#9733;</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed" style="font-style:italic;">"Saw measurable improvements in posture and strength through consistent group training."</p>
+            <p class="text-white text-sm font-semibold mt-2">— Erin Abigail</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Not Local? -->
+  <section class="section-charcoal">
+    <div class="container-narrow">
+      <div class="text-center">
+        <p class="section-label">Can't Make It In Person?</p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Not Local?</h2>
+        <p class="text-gray-300 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+          We also offer online training for those who can't train at our East Brisbane facility. Get the same Functional Patterns methodology with remote coaching and programming.
+        </p>
+        <a href="online" class="btn-outline">Learn About Online Training &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative px-4 sm:px-6 lg:px-8 py-20 sm:py-24 overflow-hidden">
+    <div class="absolute inset-0">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#050505 0%,#1e1e1e 50%,#050505 100%);"></div>
+    </div>
+    <div class="relative container-narrow text-center">
+      <p class="section-label">Ready to Start?</p>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">Get in Touch for More Info</h2>
+      <p class="text-gray-300 text-lg mb-8 max-w-xl mx-auto">Have questions about which program is right for you? Reach out and we'll help you find the best fit.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact" class="btn-primary text-base py-4 px-8">Contact Us</a>
+        <a href="tel:0433801181" class="btn-phone">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          0433 801 181
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark-950 border-t border-white/5 pt-16 pb-8 px-4">
+    <div class="container-narrow">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="text-white font-bold text-lg mb-4"><span class="text-gold-500">FP</span> Brisbane</div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">Brisbane's leading biomechanics facility. Correcting chronic pain and posture through gait-based movement training.</p>
+          <div class="flex gap-3">
+            <a href="https://www.instagram.com/fp_brisbane/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors" aria-label="Instagram">
+              <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/fpbrisbane/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors" aria-label="Facebook">
+              <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="how-we-work" class="text-gray-400 hover:text-white transition-colors">How We Work</a></li>
+            <li><a href="what-we-treat" class="text-gray-400 hover:text-white transition-colors">What We Treat</a></li>
+            <li><a href="results" class="text-gray-400 hover:text-white transition-colors">Results</a></li>
+            <li><a href="programs" class="text-gray-400 hover:text-white transition-colors">Group Programs</a></li>
+            <li><a href="online" class="text-gray-400 hover:text-white transition-colors">Online Training</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">About</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="team" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+            <li><a href="book" class="text-gray-400 hover:text-white transition-colors">Book Assessment</a></li>
+            <li><a href="contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              <a href="tel:0433801181" class="text-gray-400 hover:text-white transition-colors">0433 801 181</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+              <a href="mailto:brisbane@functionalpatterns.com" class="text-gray-400 hover:text-white transition-colors">brisbane@functionalpatterns.com</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+              <span class="text-gray-400">3 Manilla Street<br>East Brisbane, QLD 4169</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+        <p>&copy; 2026 Functional Patterns Brisbane. All rights reserved.</p>
+        <p>Mon–Fri 7am–8pm &bull; Sat 7am–3pm &bull; Sun 7am–1pm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
