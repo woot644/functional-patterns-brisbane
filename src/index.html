@@ -56,11 +56,18 @@
   </header>
 
   <!-- Hero -->
-  <section class="relative bg-dark-950 overflow-hidden pt-20">
-    <div class="container-narrow px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-8 items-center min-h-[80vh] py-16 sm:py-20">
-        <!-- Text -->
-        <div>
+  <section class="relative min-h-[90vh] flex items-center bg-dark-950 overflow-hidden pt-20">
+    <!-- Full-width background image -->
+    <div class="absolute inset-0">
+      <img src="images/training-lunge.jpg" alt="Functional Patterns Brisbane — posture and movement training session" class="w-full h-full object-cover object-[70%_center]">
+      <!-- Gradient fade: solid dark on left, transparent on right so image shows through -->
+      <div class="absolute inset-0 bg-gradient-to-r from-dark-950 via-dark-950/90 via-[55%] to-dark-950/20"></div>
+      <!-- Bottom fade -->
+      <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-dark-950/30"></div>
+    </div>
+    <div class="relative px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
+      <div class="container-narrow">
+        <div class="max-w-2xl">
           <p class="section-label">Brisbane's Leading Biomechanics Facility</p>
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6">
             Correct Your Pain &amp; Posture at the
@@ -74,18 +81,7 @@
             <a href="how-we-work" class="btn-outline">See How We Work</a>
           </div>
         </div>
-        <!-- Hero Image -->
-        <div class="relative hidden lg:block">
-          <div class="relative rounded-2xl overflow-hidden">
-            <img src="images/training-lunge.jpg" alt="Functional Patterns Brisbane — posture and movement training session" class="w-full h-[550px] object-cover object-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-dark-950/60 via-transparent to-transparent"></div>
-          </div>
-        </div>
       </div>
-    </div>
-    <!-- Mobile hero image (below text on small screens) -->
-    <div class="lg:hidden px-4 pb-8">
-      <img src="images/training-lunge.jpg" alt="Functional Patterns Brisbane — posture and movement training session" class="w-full h-64 sm:h-80 object-cover object-center rounded-xl">
     </div>
   </section>
 
