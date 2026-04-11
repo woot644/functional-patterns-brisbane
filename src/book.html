@@ -58,7 +58,7 @@
   <!-- Hero (dark, compact) -->
   <section class="relative flex items-center bg-dark-950 overflow-hidden pt-20">
     <div class="absolute inset-0">
-      <img src="images/posture-assessment.jpg" alt="Posture assessment at Functional Patterns Brisbane" class="w-full h-full object-cover opacity-15">
+      <img src="images/posture-assessment.jpg" alt="Posture assessment at Functional Patterns Brisbane" class="w-full h-full object-cover opacity-40">
       <div class="absolute inset-0 bg-gradient-to-r from-dark-950 via-dark-950/80 to-transparent"></div>
     </div>
     <div class="relative px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
@@ -89,53 +89,94 @@
         <h2 class="text-3xl sm:text-4xl font-bold">6 Components of the Assessment</h2>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card 1 -->
+        <!-- Card 1: Full Posture Analysis — spine with arrows -->
         <div class="card-dark text-center">
-          <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-accent-500/20 flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+          <div class="w-16 h-16 mx-auto mb-4">
+            <svg class="w-16 h-16 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 64 64">
+              <path d="M32 8a4 4 0 100-8 4 4 0 000 8z"/>
+              <path d="M32 10v6M30 18c-2 4-3 8-4 14M34 18c2 4 3 8 4 14M26 34c-1 6 0 10 2 16M38 34c1 6 0 10-2 16M28 52l-2 8M36 52l2 8"/>
+              <path d="M20 16l6 2M44 16l-6 2" stroke-linecap="round"/>
+              <path d="M18 14l3 1M46 14l-3 1" stroke-dasharray="2 2" opacity="0.5"/>
+            </svg>
           </div>
-          <h3 class="text-white font-semibold text-lg mb-2">Full Posture Analysis</h3>
-          <p class="text-gray-400 text-sm leading-relaxed">Comprehensive assessment of your postural alignment from multiple angles to identify asymmetries and imbalances.</p>
+          <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Full Posture Analysis</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Identify compensations, rotations, and load faults in your muscle chains.</p>
         </div>
-        <!-- Card 2 -->
+        <!-- Card 2: Gait Breakdown — foot with motion lines -->
         <div class="card-dark text-center">
-          <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-accent-500/20 flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6"/></svg>
+          <div class="w-16 h-16 mx-auto mb-4">
+            <svg class="w-16 h-16 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 64 64">
+              <path d="M22 48c2-4 6-6 10-6s8 2 12 2c3 0 5-2 5-5 0-4-3-7-6-10-2-2-3-5-3-8V16" stroke-linecap="round"/>
+              <circle cx="40" cy="12" r="3"/>
+              <path d="M14 52c4-2 8-4 8-8" stroke-linecap="round" stroke-dasharray="3 2" opacity="0.6"/>
+              <path d="M10 44l4 2M12 38l4 4M16 34l3 4" stroke-linecap="round" opacity="0.4"/>
+            </svg>
           </div>
-          <h3 class="text-white font-semibold text-lg mb-2">Gait Breakdown</h3>
-          <p class="text-gray-400 text-sm leading-relaxed">Detailed analysis of how you walk and move, filmed from 4 angles in slow motion to reveal hidden dysfunctions.</p>
+          <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Gait Breakdown</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">See exactly how your walking pattern influences your pain. We break it down in a way you can understand.</p>
         </div>
-        <!-- Card 3 -->
+        <!-- Card 3: Movement Screening — running figure -->
         <div class="card-dark text-center">
-          <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-accent-500/20 flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+          <div class="w-16 h-16 mx-auto mb-4">
+            <svg class="w-16 h-16 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 64 64">
+              <circle cx="38" cy="8" r="4"/>
+              <path d="M28 20l6-4 8 6 6-4" stroke-linecap="round"/>
+              <path d="M34 22l-4 12-8 6" stroke-linecap="round"/>
+              <path d="M34 22l2 14 8 8" stroke-linecap="round"/>
+              <path d="M22 40l-6 4M44 46l6 2" stroke-linecap="round"/>
+              <path d="M48 18l4-2" stroke-linecap="round" stroke-dasharray="2 2" opacity="0.5"/>
+            </svg>
           </div>
-          <h3 class="text-white font-semibold text-lg mb-2">Movement Screening</h3>
-          <p class="text-gray-400 text-sm leading-relaxed">Identifying dysfunctional movement patterns, muscular atrophy, weakness and compensations throughout your body.</p>
+          <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Movement Screening</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">We assess your rib cage, pelvis, foot mechanics, breathing, sling systems &amp; more during walking and running.</p>
         </div>
-        <!-- Card 4 -->
+        <!-- Card 4: Root Cause Diagnosis — magnifying glass with network -->
         <div class="card-dark text-center">
-          <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-accent-500/20 flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
+          <div class="w-16 h-16 mx-auto mb-4">
+            <svg class="w-16 h-16 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 64 64">
+              <circle cx="28" cy="28" r="14"/>
+              <path d="M38 38l12 12" stroke-linecap="round" stroke-width="2"/>
+              <circle cx="28" cy="24" r="3" fill="currentColor" opacity="0.3"/>
+              <circle cx="22" cy="32" r="2" fill="currentColor" opacity="0.3"/>
+              <circle cx="34" cy="30" r="2" fill="currentColor" opacity="0.3"/>
+              <path d="M28 24l-6 8M28 24l6 6M22 32l12-2" opacity="0.5"/>
+              <path d="M12 20l-4-4M14 12l-2-6M8 26l-4 0" stroke-linecap="round" stroke-dasharray="2 2" opacity="0.4"/>
+            </svg>
           </div>
-          <h3 class="text-white font-semibold text-lg mb-2">Root Cause Diagnosis</h3>
-          <p class="text-gray-400 text-sm leading-relaxed">Tracing your symptoms back to their true origin rather than just treating the site of pain.</p>
+          <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Root Cause Diagnosis</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">We identify why the issue exists rather than treating the symptoms. Less labels, more answers.</p>
         </div>
-        <!-- Card 5 -->
+        <!-- Card 5: Personalised Correction Plan — clipboard with star -->
         <div class="card-dark text-center">
-          <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-accent-500/20 flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15a2.25 2.25 0 012.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"/></svg>
+          <div class="w-16 h-16 mx-auto mb-4">
+            <svg class="w-16 h-16 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 64 64">
+              <rect x="14" y="10" width="36" height="46" rx="3"/>
+              <rect x="24" y="6" width="16" height="8" rx="2"/>
+              <path d="M22 26h20M22 34h20M22 42h12"/>
+              <path d="M40 38l3 3 5-7" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="32" cy="18" r="3"/>
+              <path d="M32 15l1 2 2-1-1 2 2 1-2 1 1 2-2-1-1 2-1-2-2 1 1-2-2-1 2-1-1-2 2 1z" fill="currentColor" opacity="0.2"/>
+            </svg>
           </div>
-          <h3 class="text-white font-semibold text-lg mb-2">Personalised Correction Plan</h3>
-          <p class="text-gray-400 text-sm leading-relaxed">A targeted plan to address your specific issues with a detailed roadmap for lasting correction.</p>
+          <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Personalised Correction Plan</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">We discuss your starting drills, priorities, and next steps. You will try these in the initial session.</p>
         </div>
-        <!-- Card 6 -->
+        <!-- Card 6: Education That Makes Sense — person presenting -->
         <div class="card-dark text-center">
-          <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-accent-500/20 flex items-center justify-center">
-            <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.62 48.62 0 0112 20.904a48.62 48.62 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.636 50.636 0 00-2.658-.813A59.906 59.906 0 0112 3.493a59.903 59.903 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
+          <div class="w-16 h-16 mx-auto mb-4">
+            <svg class="w-16 h-16 text-accent-500" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 64 64">
+              <rect x="6" y="12" width="32" height="24" rx="2"/>
+              <path d="M10 20h24M10 26h18M10 32h12"/>
+              <circle cx="50" cy="18" r="5"/>
+              <path d="M50 24v4M44 38c0-4 3-7 6-7s6 3 6 7"/>
+              <circle cx="50" cy="46" r="4"/>
+              <circle cx="40" cy="50" r="3"/>
+              <circle cx="58" cy="52" r="3"/>
+              <path d="M47 44l-5 4M53 44l5 6" opacity="0.5"/>
+            </svg>
           </div>
-          <h3 class="text-white font-semibold text-lg mb-2">Education That Makes Sense</h3>
-          <p class="text-gray-400 text-sm leading-relaxed">Clear explanation of what's happening in your body and why, so you understand the path to recovery.</p>
+          <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Education That Makes Sense</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Understand your body in a way that actually empowers change.</p>
         </div>
       </div>
     </div>
