@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-  <!-- Circle/Ring -->
-  <circle cx="24" cy="18" r="14" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+  <!-- Open ring -->
+  <path d="M 24 4 A 14 14 0 1 1 18.5 30" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 24 4 A 14 14 0 0 0 29.5 30" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
   <!-- Blue stem -->
-  <rect x="21" y="27" width="6" height="10" rx="1" fill="#4A9FD9"/>
-  <!-- Black fill to connect -->
-  <rect x="21" y="25" width="6" height="4" fill="currentColor"/>
+  <rect x="19.5" y="28.5" width="9" height="9" rx="1" fill="#4A9FD9"/>
+  <!-- Blend circles -->
+  <circle cx="19.5" cy="30" r="1.2" fill="#FFFFFF"/>
+  <circle cx="28.5" cy="30" r="1.2" fill="#FFFFFF"/>
 </svg>
