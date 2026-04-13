@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340">
+  <!-- Circle/Ring -->
+  <circle cx="200" cy="120" r="95" fill="none" stroke="#FFFFFF" stroke-width="32"/>
+  <!-- Blue stem -->
+  <rect x="184" y="183" width="32" height="60" rx="2" fill="#4A9FD9"/>
+  <!-- Black fill inside circle bottom to connect stem -->
+  <rect x="184" y="170" width="32" height="20" fill="#000000"/>
+  <!-- FUNCTIONAL PATTERNS text -->
+  <text x="200" y="285" text-anchor="middle" font-family="'Poppins', 'Arial', sans-serif" font-weight="600" font-size="28" fill="#FFFFFF" letter-spacing="6">FUNCTIONAL PATTERNS</text>
+  <!-- BRISBANE text -->
+  <text x="200" y="320" text-anchor="middle" font-family="'Poppins', 'Arial', sans-serif" font-weight="700" font-size="26" fill="#FFFFFF" letter-spacing="4">BRISBANE</text>
+</svg>
