@@ -5,7 +5,7 @@
     "@id": "https://www.functionalpatternsbrisbane.com/contact#webpage",
     "url": "https://www.functionalpatternsbrisbane.com/contact",
     "name": "Contact — Functional Patterns Brisbane",
-    "description": "Get in touch with Functional Patterns Brisbane. Book a consultation, ask a question, or visit us at 3 Manilla Street, East Brisbane. Call 0433 801 181.",
+    "description": "Get in touch with Functional Patterns Brisbane. Book a consultation, ask a question, or visit us at 45 Michael Street, Bulimba. Call 0433 801 181.",
     "isPartOf": {
       "@id": "https://www.functionalpatternsbrisbane.com/#website"
     },
@@ -39,10 +39,10 @@
     "email": "brisbane@functionalpatterns.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "3 Manilla Street",
-      "addressLocality": "East Brisbane",
+      "streetAddress": "45 Michael Street",
+      "addressLocality": "Bulimba",
       "addressRegion": "QLD",
-      "postalCode": "4169",
+      "postalCode": "4171",
       "addressCountry": "AU"
     },
     "openingHoursSpecification": [

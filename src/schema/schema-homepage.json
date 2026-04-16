@@ -13,16 +13,16 @@
     "email": "brisbane@functionalpatterns.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "3 Manilla Street",
-      "addressLocality": "East Brisbane",
+      "streetAddress": "45 Michael Street",
+      "addressLocality": "Bulimba",
       "addressRegion": "QLD",
-      "postalCode": "4169",
+      "postalCode": "4171",
       "addressCountry": "AU"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": -27.48580,
-      "longitude": 153.04220
+      "latitude": -27.45450,
+      "longitude": 153.05600
     },
     "openingHoursSpecification": [
       {
@@ -147,7 +147,7 @@
     "@id": "https://www.functionalpatternsbrisbane.com/#website",
     "url": "https://www.functionalpatternsbrisbane.com/",
     "name": "Functional Patterns Brisbane",
-    "description": "Biomechanics and posture specialists in East Brisbane. Correcting chronic pain through gait-based movement training.",
+    "description": "Biomechanics and posture specialists in Bulimba. Correcting chronic pain through gait-based movement training.",
     "publisher": {
       "@id": "https://www.functionalpatternsbrisbane.com/#business"
     },
@@ -166,7 +166,7 @@
     "@id": "https://www.functionalpatternsbrisbane.com/#webpage",
     "url": "https://www.functionalpatternsbrisbane.com/",
     "name": "Functional Patterns Brisbane — Biomechanics & Posture Specialists",
-    "description": "Reduce chronic pain and improve your posture with Functional Patterns Brisbane. Gait-based biomechanics training in East Brisbane. 130+ five-star reviews.",
+    "description": "Reduce chronic pain and improve your posture with Functional Patterns Brisbane. Gait-based biomechanics training in Bulimba. 130+ five-star reviews.",
     "isPartOf": {
       "@id": "https://www.functionalpatternsbrisbane.com/#website"
     },
