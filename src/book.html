@@ -9,6 +9,124 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://functional-patterns-brisbane.vercel.app/book">
+  <meta property="og:title" content="Book Assessment — Functional Patterns Brisbane">
+  <meta property="og:description" content="Book your 90-minute posture and gait assessment at Functional Patterns Brisbane. Full biomechanics analysis, personalised correction plan, and 45+ minutes of corrective training.">
+  <meta property="og:image" content="https://functional-patterns-brisbane.vercel.app/images/fp-logo-full.jpg">
+  <meta property="og:url" content="https://functional-patterns-brisbane.vercel.app/book">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.functionalpatternsbrisbane.com/book#service",
+    "name": "Posture & Gait Assessment",
+    "alternateName": "90-Minute Biomechanics Assessment",
+    "description": "A comprehensive 90-minute posture and gait assessment. Filmed from 4 angles in slow motion. Includes full posture analysis, gait breakdown, movement screening, root cause diagnosis, personalised correction plan, 45+ minutes of corrective training, and bonus resources.",
+    "url": "https://www.functionalpatternsbrisbane.com/book",
+    "provider": {
+      "@id": "https://www.functionalpatternsbrisbane.com/#business"
+    },
+    "serviceType": "Biomechanics Assessment",
+    "category": "Health & Fitness",
+    "areaServed": {
+      "@type": "City",
+      "name": "Brisbane"
+    },
+    "serviceOutput": "Personalised biomechanics correction plan with corrective exercises",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.functionalpatternsbrisbane.com/book",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "AUD"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Assessment Components",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Full Posture Analysis",
+            "description": "Identify compensations, rotations, and load faults in your muscle chains."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Gait Breakdown",
+            "description": "See exactly how your walking pattern influences your pain."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Movement Screening",
+            "description": "Assessment of rib cage, pelvis, foot mechanics, breathing, sling systems and more during walking and running."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Root Cause Diagnosis",
+            "description": "We identify why the issue exists rather than treating the symptoms."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Personalised Correction Plan",
+            "description": "Starting drills, priorities, and next steps trialled in the initial session."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "45+ Minutes Corrective Training",
+            "description": "Hands-on corrective work in your very first session."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.functionalpatternsbrisbane.com/book#webpage",
+    "url": "https://www.functionalpatternsbrisbane.com/book",
+    "name": "Book Assessment — Functional Patterns Brisbane",
+    "description": "Book your 90-minute posture and gait assessment at Functional Patterns Brisbane. Full biomechanics analysis, personalised correction plan, and 45+ minutes of corrective training.",
+    "isPartOf": {
+      "@id": "https://www.functionalpatternsbrisbane.com/#website"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.functionalpatternsbrisbane.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Book Assessment",
+          "item": "https://www.functionalpatternsbrisbane.com/book"
+        }
+      ]
+    }
+  }
+]
+  </script>
 </head>
 <body>
 
@@ -18,7 +136,7 @@
       <div class="container-narrow flex items-center justify-between h-20 sm:h-28">
         <!-- Logo -->
         <a href="/" class="text-white font-bold text-lg tracking-tight">
-          <img src="images/fp-logo-full.jpg" alt="Functional Patterns Brisbane" class="h-28">
+          <img src="images/fp-logo-full.jpg" alt="Functional Patterns Brisbane" loading="eager" width="499" height="374" class="h-28">
         </a>
         <!-- Desktop nav -->
         <div class="hidden lg:flex items-center gap-6">
@@ -58,7 +176,7 @@
   <!-- Hero (dark, compact) -->
   <section class="relative flex items-center bg-dark-950 overflow-hidden pt-20">
     <div class="absolute inset-0">
-      <img src="images/book-hero.jpg" alt="Posture and gait assessment at Functional Patterns Brisbane" class="w-full h-full object-cover opacity-40">
+      <img src="images/book-hero.jpg" alt="Posture and gait assessment at Functional Patterns Brisbane" loading="lazy" width="1500" height="1200" class="w-full h-full object-cover opacity-40">
       <div class="absolute inset-0 bg-gradient-to-r from-dark-950 via-dark-950/70 via-[35%] to-transparent"></div>
     </div>
     <div class="relative px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
@@ -81,6 +199,30 @@
     </div>
   </section>
 
+  <!-- Pricing -->
+  <section class="section-dark">
+    <div class="container-narrow">
+      <div class="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div class="card-dark p-6 text-center" style="border-color: rgba(196,154,60,0.3);">
+          <p class="text-accent-500 text-xs font-semibold uppercase tracking-wide mb-2">Most Popular</p>
+          <h3 class="text-xl font-bold text-white mb-2">Initial Assessment</h3>
+          <p class="text-gray-400 text-sm mb-4">90-minute posture &amp; gait consultation</p>
+          <p class="text-4xl font-extrabold text-white mb-1">$225</p>
+          <p class="text-gray-500 text-xs mb-6">Prices inclusive of tax</p>
+          <a href="https://impulse-rehab-centre.au1.cliniko.com/bookings?business_id=73368#service" target="_blank" rel="noopener" class="btn-primary py-3 px-6 text-sm w-full block">Book Online</a>
+        </div>
+        <div class="card-dark p-6 text-center">
+          <p class="text-gray-500 text-xs font-semibold uppercase tracking-wide mb-2">Quick Start</p>
+          <h3 class="text-xl font-bold text-white mb-2">Express Consultation</h3>
+          <p class="text-gray-400 text-sm mb-4">40-minute biomechanics overview</p>
+          <p class="text-4xl font-extrabold text-white mb-1">$95</p>
+          <p class="text-gray-500 text-xs mb-6">Prices inclusive of tax</p>
+          <a href="https://impulse-rehab-centre.au1.cliniko.com/bookings?business_id=73368#service" target="_blank" rel="noopener" class="btn-outline py-3 px-6 text-sm w-full block">Book Online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- What You Get (section-charcoal) -->
   <section class="section-charcoal">
     <div class="container-narrow">
@@ -91,37 +233,37 @@
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
         <div class="card-dark text-center">
-          <img src="images/assess-posture.png" alt="Full Posture Analysis" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
+          <img src="images/assess-posture.png" alt="Full Posture Analysis" loading="lazy" width="500" height="500" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
           <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Full Posture Analysis</h3>
           <p class="text-gray-400 text-sm leading-relaxed">Identify compensations, rotations, and load faults in your muscle chains.</p>
         </div>
         <!-- Card 2 -->
         <div class="card-dark text-center">
-          <img src="images/assess-gait.png" alt="Gait Breakdown" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
+          <img src="images/assess-gait.png" alt="Gait Breakdown" loading="lazy" width="500" height="500" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
           <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Gait Breakdown</h3>
           <p class="text-gray-400 text-sm leading-relaxed">See exactly how your walking pattern influences your pain. We break it down in a way you can understand.</p>
         </div>
         <!-- Card 3 -->
         <div class="card-dark text-center">
-          <img src="images/assess-movement.png" alt="Movement Screening" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
+          <img src="images/assess-movement.png" alt="Movement Screening" loading="lazy" width="500" height="500" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
           <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Movement Screening</h3>
           <p class="text-gray-400 text-sm leading-relaxed">We assess your rib cage, pelvis, foot mechanics, breathing, sling systems &amp; more during walking and running.</p>
         </div>
         <!-- Card 4 -->
         <div class="card-dark text-center">
-          <img src="images/assess-rootcause.png" alt="Root Cause Diagnosis" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
+          <img src="images/assess-rootcause.png" alt="Root Cause Diagnosis" loading="lazy" width="500" height="500" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
           <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Root Cause Diagnosis</h3>
           <p class="text-gray-400 text-sm leading-relaxed">We identify why the issue exists rather than treating the symptoms. Less labels, more answers.</p>
         </div>
         <!-- Card 5 -->
         <div class="card-dark text-center">
-          <img src="images/assess-corrective.png" alt="Personalised Correction Plan" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
+          <img src="images/assess-corrective.png" alt="Personalised Correction Plan" loading="lazy" width="500" height="500" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
           <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Personalised Correction Plan</h3>
           <p class="text-gray-400 text-sm leading-relaxed">We discuss your starting drills, priorities, and next steps. You will try these in the initial session.</p>
         </div>
         <!-- Card 6 -->
         <div class="card-dark text-center">
-          <img src="images/assess-education.png" alt="Education That Makes Sense" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
+          <img src="images/assess-education.png" alt="Education That Makes Sense" loading="lazy" width="500" height="500" class="w-16 h-16 mx-auto mb-4 invert opacity-90">
           <h3 class="text-white font-semibold text-lg mb-2 uppercase tracking-wide">Education That Makes Sense</h3>
           <p class="text-gray-400 text-sm leading-relaxed">Understand your body in a way that actually empowers change.</p>
         </div>
@@ -233,7 +375,7 @@
           </ul>
         </div>
         <div class="relative">
-          <img src="images/gait-analysis.jpg" alt="Gait analysis session at Functional Patterns Brisbane" class="rounded-2xl w-full">
+          <img src="images/gait-analysis.jpg" alt="Gait analysis session at Functional Patterns Brisbane" loading="lazy" width="1500" height="1200" class="rounded-2xl w-full">
         </div>
       </div>
     </div>
@@ -296,7 +438,7 @@
   <!-- Booking CTA (section-charcoal with image bg) -->
   <section class="relative px-4 sm:px-6 lg:px-8 py-20 sm:py-24 overflow-hidden">
     <div class="absolute inset-0 bg-dark-950">
-      <img src="images/posture-assessment.jpg" alt="Book your assessment" class="w-full h-full object-cover opacity-15">
+      <img src="images/posture-assessment.jpg" alt="Book your assessment" loading="lazy" width="1289" height="1230" class="w-full h-full object-cover opacity-15">
     </div>
     <div class="relative container-narrow text-center">
       <p class="section-label">Take the First Step</p>
@@ -318,7 +460,7 @@
     <div class="container-narrow">
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
         <div>
-          <div class="text-white font-bold text-lg mb-4"><img src="images/fp-logo-full.jpg" alt="Functional Patterns Brisbane" class="h-28"></div>
+          <div class="text-white font-bold text-lg mb-4"><img src="images/fp-logo-full.jpg" alt="Functional Patterns Brisbane" loading="eager" width="499" height="374" class="h-28"></div>
           <p class="text-gray-400 text-sm leading-relaxed mb-4">Brisbane's leading biomechanics facility. Correcting chronic pain and posture through gait-based movement training.</p>
           <div class="flex gap-3">
             <a href="https://www.instagram.com/fp_brisbane/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors" aria-label="Instagram">
@@ -345,6 +487,7 @@
             <li><a href="team" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
             <li><a href="book" class="text-gray-400 hover:text-white transition-colors">Book Assessment</a></li>
             <li><a href="contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+            <li><a href="privacy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
           </ul>
         </div>
         <div>
@@ -365,6 +508,7 @@
           </ul>
         </div>
       </div>
+            <p class="text-xs text-gray-600 mt-6 leading-relaxed max-w-2xl mx-auto text-center">Individual results vary. The content on this website is for educational purposes and does not constitute medical advice. Consult a qualified health professional before making changes to your health management.</p>
       <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
         <p>&copy; 2026 Functional Patterns Brisbane. All rights reserved.</p>
         <p>Mon&ndash;Fri 7am&ndash;8pm &bull; Sat 7am&ndash;3pm &bull; Sun 7am&ndash;1pm</p>

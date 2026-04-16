@@ -1,0 +1,116 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.functionalpatternsbrisbane.com/results#webpage",
+    "url": "https://www.functionalpatternsbrisbane.com/results",
+    "name": "Results — Functional Patterns Brisbane | Case Studies & Testimonials",
+    "description": "Real results from Functional Patterns Brisbane. 130+ five-star reviews. Measurable pain reduction, scoliosis correction, and athlete performance gains.",
+    "isPartOf": {
+      "@id": "https://www.functionalpatternsbrisbane.com/#website"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.functionalpatternsbrisbane.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Case Studies",
+          "item": "https://www.functionalpatternsbrisbane.com/results"
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "https://www.functionalpatternsbrisbane.com/results#caselist",
+    "name": "Client Transformation Case Studies",
+    "description": "Documented before-and-after transformations from clients at Functional Patterns Brisbane.",
+    "url": "https://www.functionalpatternsbrisbane.com/results",
+    "numberOfItems": 11,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Irenie — Posture Correction",
+        "description": "Poor posture and constant back and knee pain transformed into enhanced posture and significantly improved quality of life.",
+        "url": "https://www.functionalpatternsbrisbane.com/results"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Matt — 8-Month Transformation",
+        "description": "Kyphosis, lordosis, and chronic pain from head to toe. Now completely pain-free with reduced body fat and improved structure.",
+        "url": "https://www.functionalpatternsbrisbane.com/results"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Natalie — Scoliosis & Posture",
+        "description": "13 months of training. Pain went from 8/10 to 0/10. Can now sleep on her side and is significantly stronger.",
+        "url": "https://www.functionalpatternsbrisbane.com/results"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Louis — 3-Year Transformation",
+        "description": "Adrenal fatigue, shoulder tears, and SI joint dysfunction. Gained 6kg of muscle with complete pain elimination.",
+        "url": "https://www.functionalpatternsbrisbane.com/results"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Melissa — Scoliosis Correction",
+        "description": "5 months of training produced measurable curve improvement, better balance, and enhanced cognitive function.",
+        "url": "https://www.functionalpatternsbrisbane.com/results"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Courtney — Post-Surgery Scoliosis",
+        "description": "6 months. Original 50° curve fused to 7°, then developed a new 40° curve that is now improving without further surgery.",
+        "url": "https://www.functionalpatternsbrisbane.com/results"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Scoliosis — Return to Boxing",
+        "description": "10 months of training. Cobb angle reduced from 27° to 17°. Pain dropped from 7/10 to 0/10. Full return to competitive boxing.",
+        "url": "https://www.functionalpatternsbrisbane.com/results"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Lachlan — L5/S1 & Sciatica",
+        "description": "Severe back pain and sciatica resolved. Now pain-free with a decompressed lumbar spine.",
+        "url": "https://www.functionalpatternsbrisbane.com/results"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "Eleni — Post-Surgery Pain",
+        "description": "Lower back and hip pain following surgery. Now pain-free with full daily function restored.",
+        "url": "https://www.functionalpatternsbrisbane.com/results"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "AggregateRating",
+    "@id": "https://www.functionalpatternsbrisbane.com/results#rating",
+    "itemReviewed": {
+      "@id": "https://www.functionalpatternsbrisbane.com/#business"
+    },
+    "ratingValue": "5",
+    "reviewCount": "130",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+]

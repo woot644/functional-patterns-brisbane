@@ -1,0 +1,109 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.functionalpatternsbrisbane.com/book#service",
+    "name": "Posture & Gait Assessment",
+    "alternateName": "90-Minute Biomechanics Assessment",
+    "description": "A comprehensive 90-minute posture and gait assessment. Filmed from 4 angles in slow motion. Includes full posture analysis, gait breakdown, movement screening, root cause diagnosis, personalised correction plan, 45+ minutes of corrective training, and bonus resources.",
+    "url": "https://www.functionalpatternsbrisbane.com/book",
+    "provider": {
+      "@id": "https://www.functionalpatternsbrisbane.com/#business"
+    },
+    "serviceType": "Biomechanics Assessment",
+    "category": "Health & Fitness",
+    "areaServed": {
+      "@type": "City",
+      "name": "Brisbane"
+    },
+    "serviceOutput": "Personalised biomechanics correction plan with corrective exercises",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.functionalpatternsbrisbane.com/book",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "AUD"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Assessment Components",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Full Posture Analysis",
+            "description": "Identify compensations, rotations, and load faults in your muscle chains."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Gait Breakdown",
+            "description": "See exactly how your walking pattern influences your pain."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Movement Screening",
+            "description": "Assessment of rib cage, pelvis, foot mechanics, breathing, sling systems and more during walking and running."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Root Cause Diagnosis",
+            "description": "We identify why the issue exists rather than treating the symptoms."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Personalised Correction Plan",
+            "description": "Starting drills, priorities, and next steps trialled in the initial session."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "45+ Minutes Corrective Training",
+            "description": "Hands-on corrective work in your very first session."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.functionalpatternsbrisbane.com/book#webpage",
+    "url": "https://www.functionalpatternsbrisbane.com/book",
+    "name": "Book Assessment — Functional Patterns Brisbane",
+    "description": "Book your 90-minute posture and gait assessment at Functional Patterns Brisbane. Full biomechanics analysis, personalised correction plan, and 45+ minutes of corrective training.",
+    "isPartOf": {
+      "@id": "https://www.functionalpatternsbrisbane.com/#website"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.functionalpatternsbrisbane.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Book Assessment",
+          "item": "https://www.functionalpatternsbrisbane.com/book"
+        }
+      ]
+    }
+  }
+]

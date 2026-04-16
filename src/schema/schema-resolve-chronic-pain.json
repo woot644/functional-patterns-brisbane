@@ -1,0 +1,101 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "@id": "https://www.functionalpatternsbrisbane.com/conditions/chronic-pain#webpage",
+    "url": "https://www.functionalpatternsbrisbane.com/conditions/chronic-pain",
+    "name": "Chronic Back Pain Treatment Brisbane | Functional Patterns Brisbane",
+    "description": "Resolve chronic back pain, neck pain, and sciatica through biomechanics-based movement training at Functional Patterns Brisbane.",
+    "isPartOf": {
+      "@id": "https://www.functionalpatternsbrisbane.com/#website"
+    },
+    "about": {
+      "@type": "MedicalCondition",
+      "name": "Chronic Back Pain",
+      "alternateName": ["Lower Back Pain", "Sciatica", "Chronic Pain"],
+      "associatedAnatomy": {
+        "@type": "AnatomicalStructure",
+        "name": "Lumbar Spine"
+      }
+    },
+    "mentions": [
+      {
+        "@type": "MedicalCondition",
+        "name": "Sciatica"
+      },
+      {
+        "@type": "MedicalCondition",
+        "name": "Scoliosis"
+      },
+      {
+        "@type": "MedicalCondition",
+        "name": "Hip Osteoarthritis"
+      }
+    ],
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.functionalpatternsbrisbane.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Resolve Chronic Pain",
+          "item": "https://www.functionalpatternsbrisbane.com/conditions/chronic-pain"
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.functionalpatternsbrisbane.com/conditions/chronic-pain#service",
+    "name": "Chronic Pain Treatment",
+    "description": "Gait-based biomechanics treatment for chronic back pain, neck pain, sciatica, and nerve pain. We identify and correct the root-cause movement dysfunctions rather than managing symptoms.",
+    "url": "https://www.functionalpatternsbrisbane.com/conditions/chronic-pain",
+    "provider": {
+      "@id": "https://www.functionalpatternsbrisbane.com/#business"
+    },
+    "serviceType": "Pain Management",
+    "category": "Biomechanics & Movement Therapy",
+    "areaServed": {
+      "@type": "City",
+      "name": "Brisbane"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://www.functionalpatternsbrisbane.com/conditions/chronic-pain#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why does chronic back pain keep coming back after physio and chiropractic treatment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most treatments manage symptoms at the site of pain but don't change how you move. Massage releases tension temporarily, but the movement pattern that created the tension recreates it within days. Chiropractic adjustments temporarily improve alignment, but the body reverts to its adapted patterns because the underlying movement hasn't changed. If the way you move continues to overload the same structures, your body will keep recreating the same pain."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is gait-based treatment for chronic back pain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gait-based treatment involves filming your movement from 4 angles in slow motion to identify asymmetries, hip drops, core bracing issues, and compensations that are invisible to the naked eye. We then retrain how your rib cage stacks on your pelvis, how your hips stabilise, how force distributes through your body, and how your breathing mechanics support your structure. The result is a balanced structure where the spine is no longer overloaded."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What causes chronic back pain to become embedded?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chronic back pain lasting 12+ weeks has become embedded in deep-rooted compensatory patterns. Common causes include lumbar compression from poor rib-to-pelvis alignment, hip instability that forces the lower back to stabilise on its own, reduced glute and core integration during walking, imbalanced gait patterns that overload one side of the spine, and old injury compensations that the body never resolved."
+        }
+      }
+    ]
+  }
+]
