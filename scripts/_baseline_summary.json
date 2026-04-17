@@ -1,0 +1,259 @@
+{
+  "total": 478,
+  "buckets": {
+    "1": 11,
+    "2-3": 49,
+    "4-10": 167,
+    "11-20": 108,
+    "21-50": 108,
+    "51-100": 35
+  },
+  "total_etv": 3776.719,
+  "top20": [
+    {
+      "keyword": "functional patterns brisbane",
+      "rank": 1,
+      "sv": 880,
+      "etv": 267.52,
+      "path": "/"
+    },
+    {
+      "keyword": "posture workout",
+      "rank": 2,
+      "sv": 1000,
+      "etv": 162,
+      "path": "/blog-page/posture-workouts-that-actually-work-a-complete-guide"
+    },
+    {
+      "keyword": "tensor fasciae latae muscle",
+      "rank": 9,
+      "sv": 6600,
+      "etv": 99,
+      "path": "/blog-page/why-is-my-tensor-fascia-lata-tfl-always-tight"
+    },
+    {
+      "keyword": "hyperextended knee",
+      "rank": 6,
+      "sv": 2400,
+      "etv": 81.12,
+      "path": "/blog-page/exercises-for-hyperextended-knees-a-guide-to-strength"
+    },
+    {
+      "keyword": "hyperextension of the knee",
+      "rank": 6,
+      "sv": 2400,
+      "etv": 81.12,
+      "path": "/blog-page/exercises-for-hyperextended-knees-a-guide-to-strength"
+    },
+    {
+      "keyword": "tensor fascia lata",
+      "rank": 8,
+      "sv": 3600,
+      "etv": 70.92,
+      "path": "/blog-page/why-is-my-tensor-fascia-lata-tfl-always-tight"
+    },
+    {
+      "keyword": "functional patterns",
+      "rank": 5,
+      "sv": 1300,
+      "etv": 60.97,
+      "path": "/"
+    },
+    {
+      "keyword": "transverse abdominis",
+      "rank": 8,
+      "sv": 2900,
+      "etv": 57.13,
+      "path": "/blog-page/the-transverse-abdominis-tva-vs-the-superficial-abs-6-pack-why-its-crucial-to-know-the-difference"
+    },
+    {
+      "keyword": "transverse muscle",
+      "rank": 8,
+      "sv": 2900,
+      "etv": 57.13,
+      "path": "/blog-page/the-transverse-abdominis-tva-vs-the-superficial-abs-6-pack-why-its-crucial-to-know-the-difference"
+    },
+    {
+      "keyword": "hunchback kyphosis",
+      "rank": 13,
+      "sv": 8100,
+      "etv": 47.79,
+      "path": "/blog-page/do-kyphosis-hunch-back-posture-correctors-really-work"
+    },
+    {
+      "keyword": "scapulars wings",
+      "rank": 8,
+      "sv": 2400,
+      "etv": 47.28,
+      "path": "/blog-page/why-your-scapulars-stick-out-winged-scapulars-the-thoracic-spine"
+    },
+    {
+      "keyword": "rounded shoulders",
+      "rank": 5,
+      "sv": 1000,
+      "etv": 46.9,
+      "path": "/blog-page/why-your-rounded-shoulders-keep-coming-back-and-what-to-do-instead"
+    },
+    {
+      "keyword": "exercises neck hump",
+      "rank": 3,
+      "sv": 480,
+      "etv": 46.704,
+      "path": "/blog-page/how-to-fix-neck-humps-a-biomechanical-approach"
+    },
+    {
+      "keyword": "how to heal bulging disc naturally",
+      "rank": 3,
+      "sv": 480,
+      "etv": 46.704,
+      "path": "/blog-page/how-to-heal-a-bulging-disc-naturally"
+    },
+    {
+      "keyword": "natural hyperextended knee",
+      "rank": 1,
+      "sv": 140,
+      "etv": 42.56,
+      "path": "/blog-page/exercises-for-hyperextended-knees-a-guide-to-strength"
+    },
+    {
+      "keyword": "naturally hyperextended knee",
+      "rank": 1,
+      "sv": 140,
+      "etv": 42.56,
+      "path": "/blog-page/exercises-for-hyperextended-knees-a-guide-to-strength"
+    },
+    {
+      "keyword": "naturally hyperextended knees",
+      "rank": 1,
+      "sv": 140,
+      "etv": 42.56,
+      "path": "/blog-page/exercises-for-hyperextended-knees-a-guide-to-strength"
+    },
+    {
+      "keyword": "how to fix shoulder blade winging",
+      "rank": 2,
+      "sv": 260,
+      "etv": 42.12,
+      "path": "/blog-page/how-to-fix-scapular-winging-typical-exercises-dont-work"
+    },
+    {
+      "keyword": "how to fix winging shoulder blades",
+      "rank": 2,
+      "sv": 260,
+      "etv": 42.12,
+      "path": "/blog-page/how-to-fix-scapular-winging-typical-exercises-dont-work"
+    },
+    {
+      "keyword": "discomfort lower back left side",
+      "rank": 7,
+      "sv": 1600,
+      "etv": 40.96,
+      "path": "/blog-page/lower-back-ache-left-side-in-brisbane-causes-amp-when-its-mechanical"
+    }
+  ],
+  "brisbane": [
+    {
+      "keyword": "functional patterns brisbane",
+      "rank": 1,
+      "sv": 880,
+      "etv": 267.52,
+      "path": "/"
+    },
+    {
+      "keyword": "boxing brisbane",
+      "rank": 52,
+      "sv": 720,
+      "etv": 1.512,
+      "path": "/boxing-for-balance"
+    },
+    {
+      "keyword": "brisbane posture and performance",
+      "rank": 11,
+      "sv": 110,
+      "etv": 1.001,
+      "path": "/correct-posture"
+    },
+    {
+      "keyword": "movement improvement brisbane",
+      "rank": 33,
+      "sv": 390,
+      "etv": 0.819,
+      "path": "/"
+    },
+    {
+      "keyword": "east brisbane gym",
+      "rank": 16,
+      "sv": 140,
+      "etv": 0.602,
+      "path": "/blog-page/why-functional-patterns-is-the-best-gym-in-east-brisbane"
+    },
+    {
+      "keyword": "gym east brisbane",
+      "rank": 17,
+      "sv": 140,
+      "etv": 0.602,
+      "path": "/blog-page/why-functional-patterns-is-the-best-gym-in-east-brisbane"
+    },
+    {
+      "keyword": "boxing class brisbane",
+      "rank": 50,
+      "sv": 260,
+      "etv": 0.546,
+      "path": "/boxing-for-balance"
+    },
+    {
+      "keyword": "strength training brisbane",
+      "rank": 31,
+      "sv": 50,
+      "etv": 0.105,
+      "path": "/"
+    }
+  ],
+  "blog_page_count": 415,
+  "blog_page_top5": [
+    {
+      "keyword": "posture workout",
+      "rank": 2,
+      "sv": 1000,
+      "etv": 162,
+      "path": "/blog-page/posture-workouts-that-actually-work-a-complete-guide"
+    },
+    {
+      "keyword": "tensor fasciae latae muscle",
+      "rank": 9,
+      "sv": 6600,
+      "etv": 99,
+      "path": "/blog-page/why-is-my-tensor-fascia-lata-tfl-always-tight"
+    },
+    {
+      "keyword": "hyperextended knee",
+      "rank": 6,
+      "sv": 2400,
+      "etv": 81.12,
+      "path": "/blog-page/exercises-for-hyperextended-knees-a-guide-to-strength"
+    },
+    {
+      "keyword": "hyperextension of the knee",
+      "rank": 6,
+      "sv": 2400,
+      "etv": 81.12,
+      "path": "/blog-page/exercises-for-hyperextended-knees-a-guide-to-strength"
+    },
+    {
+      "keyword": "tensor fascia lata",
+      "rank": 8,
+      "sv": 3600,
+      "etv": 70.92,
+      "path": "/blog-page/why-is-my-tensor-fascia-lata-tfl-always-tight"
+    }
+  ],
+  "branded": [
+    {
+      "keyword": "functional patterns brisbane",
+      "rank": 1,
+      "sv": 880,
+      "etv": 267.52,
+      "path": "/"
+    }
+  ]
+}

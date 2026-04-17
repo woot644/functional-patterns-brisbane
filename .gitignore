@@ -1,3 +1,14 @@
 node_modules/
 .vercel/
 fp-*-preview.png
+
+# Debug / preview artifacts
+.playwright-mcp/
+screenshots/
+qc-*.png
+*-preview.png
+baseline-pdf-preview.png
+
+# Migration working files (keep scraped JSON as source-of-truth)
+scripts/missing_slugs.txt
+scripts/failed_slugs.txt
