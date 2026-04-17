@@ -51,7 +51,6 @@ TEAM = [
     ("Sam Marsh", "HBS, HBS1 Certified Biomechanics Specialist"),
     ("Keriann Zipperer", "HBS, HBS1 Certified. Bachelor of Health Science (Clinical Nutrition)"),
     ("Emmanuel Searty", "Chronic Pain Specialist"),
-    ("Harj Sethi", "Practitioner"),
     ("Emma Kopcikas", "Doctorate in Osteopathy. Practitioner"),
     ("Kaan Akkaya", "Practitioner"),
     ("Aman Jagpal", "Practitioner"),
