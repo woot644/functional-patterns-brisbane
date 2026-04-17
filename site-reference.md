@@ -202,6 +202,11 @@
 - Facebook Pixel: 4333250360239242
 - Hotjar: hjid 2798567
 - HubSpot CRM: 22308489
+  - FP Main Lead Form ID: `83060037-4a08-4f0d-a675-38591ea6341c` (region: na1)
+  - Share link: https://da5c9.share.hsforms.com/2gwYAN0oITw2mdThZHqY0HA
+  - Embed script: `https://js.hsforms.net/forms/embed/22308489.js`
+  - Embedded on `/contact` (primary contact form) and `/book` (soft enquiry, below testimonials)
+  - Client may migrate form platform later — embeds are kept self-contained (script + div) for easy replacement
 
 ---
 
