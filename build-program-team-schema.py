@@ -57,7 +57,7 @@ TEAM = [
     ("Aman Jagpal", "Practitioner"),
     ("Max Emett", "Practitioner"),
     ("Trent Hill", "Practitioner"),
-    ("Pietro Cucinotta", "Online Services Practitioner"),
+    ("Pietro Cucinotta", "Online Practitioner — Functional Patterns Italy"),
     ("Gavin O'Neill", "Online Practitioner — Functional Patterns Dublin"),
     ("Steve Zekic", "Online Practitioner — Functional Patterns Sydney"),
 ]
