@@ -46,6 +46,13 @@ I ran a baseline SEO snapshot of the live Squarespace site before the cutover so
 - 11 keywords in position 1
 - Roughly $2,350/month in estimated organic traffic value
 - You're competing at the content-authority level with Cleveland Clinic, NIH, and Mayo Clinic for queries like "tensor fasciae latae" and "transverse abdominis" — genuinely impressive for a local business
+- Backlink profile is clean (134 backlinks, 71 referring domains, low spam) — the strongest single source is your Burleigh Biomechanics sister site
+
+**A surprise upside I didn't expect to find:**
+
+Your site is **completely invisible on ChatGPT.** Zero mentions — even for queries like "tensor fasciae latae" where ChatGPT gets 2,693 searches a month and you already rank #9 on Google for the same query. The cause: your Squarespace site's `robots.txt` has been blocking ChatGPT, Perplexity, and Claude from crawling you since they launched. Your excellent content has been invisible to AI tools the entire time.
+
+The new Vercel build allows all AI crawlers (and includes an `llms.txt` file to help them understand the site). Once we switch domains, the site becomes crawlable by ChatGPT for the first time — and 4–8 weeks after that, you should start appearing in AI answers for queries like "how to fix a neck hump," "scapular winging exercises," and "tensor fasciae latae tight." That's net-new traffic, not just recovered Google traffic.
 
 **The issue:**
 **87% of your organic traffic comes from blog articles on `/blog-page/*` URLs — and those articles don't exist on the new Vercel build.**
@@ -79,8 +86,9 @@ Zac
 ---
 
 **Attachments referenced:**
-- `baseline-seo-apr2026.md` — full report
+- `baseline-seo-apr2026.md` — full report (includes backlinks + AI visibility sections)
 - `baseline-keywords-apr2026.csv` — all 478 ranking keywords with position, search volume, landing URL, and estimated traffic value
+- `baseline-backlinks-apr2026.csv` — top 30 referring domains
 
 ---
 

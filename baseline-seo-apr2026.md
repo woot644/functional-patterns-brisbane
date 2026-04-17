@@ -9,15 +9,22 @@
 
 ## Executive Summary
 
-**The site has real, substantial SEO equity — and 87% of it lives on blog URLs that don't exist on the new Vercel build.**
+**Three things to know:**
+
+1. **The site has real, substantial SEO equity — and 87% of it lives on blog URLs that don't exist on the new Vercel build.** 415 of 478 ranked keywords point to `/blog-page/*` paths that 404 on the rebuild. Without a redirect plan or content port, the DNS cutover drops ~87% of organic traffic overnight. This must be resolved before launch.
+
+2. **The backlink profile is clean but under-leveraged.** 134 backlinks from 71 referring domains — mostly branded URL anchors from sister FP practices in Melbourne, Sydney, and Gold Coast. Almost zero keyword-rich anchor text. Low spam score. This is a solid foundation for a targeted link-building campaign post-launch.
+
+3. **FP Brisbane has zero visibility in ChatGPT.** Zero mentions for the domain, zero citations in AI answers — even for queries where the site ranks top-10 on Google (e.g. "tensor fasciae latae" has 2,693 monthly ChatGPT searches but FP Brisbane isn't cited once). Cause: Squarespace's `robots.txt` has been blocking AI crawlers. The new Vercel build unblocks them. Real upside after cutover.
+
+### Key numbers
 
 - **478 keywords** ranking in Google AU top 100
 - **$2,350/mo** estimated organic traffic value
 - **227 keywords in top 10** (47% of the ranked set)
 - **11 keywords in position 1**
-- **415 of those 478 keywords (87%)** rank on `/blog-page/*` URLs — a path that does not exist on the new Vercel rebuild
-
-**Migration risk:** Without a redirect plan or content port, the DNS cutover will drop ~87% of organic traffic overnight. This must be resolved before launch.
+- **134 backlinks** from **71 referring domains**
+- **0 mentions** on ChatGPT — large untapped AI-search opportunity
 
 ---
 
@@ -160,12 +167,84 @@ Top 10 domains that rank alongside FP Brisbane for the same keywords (excluding 
 
 ---
 
+## Backlink Profile
+
+| Metric | Value |
+|---|---|
+| Total backlinks | 134 |
+| Referring domains | 71 |
+| Referring IPs | 47 |
+| Referring subnets | 46 |
+| First backlink observed | 2022-03-29 |
+| DataForSEO domain rank | 188 (out of 1,000 — mid-tier) |
+| Spam score | 20 / 100 (moderate — some spammy directories) |
+| Broken backlinks | 3 |
+| AU-country links | 55 of 71 (77% — strong local signal) |
+| Dofollow backlinks | 117 of 134 |
+
+**Top 5 referring domains:**
+
+| Domain | Backlinks | Role |
+|---|---:|---|
+| burleighbiomechanics.com.au | 47 | Sister FP practice on the Gold Coast — largest single source |
+| functionalpatternsmelbourne.com | 10 | Sister FP site |
+| bigfooty.com | 3 | AFL community forum (nofollow) |
+| functionalpatternssydney.com | 2 | Sister FP site |
+| findhealthclinics.com | 2 | Health clinic directory |
+
+One link observed from `howitheals.com`, `unid.edu.pe` (Peruvian university, anchor: "Biomechanics experts"), and `sunstreamsaunas.com.au`.
+
+**Anchor text profile (unusual pattern):**
+
+- 47× full URL `https://www.functionalpatternsbrisbane.com` (all from Burleigh Biomechanics)
+- 30× naked URL `functionalpatternsbrisbane.com`
+- 12× naked text `functionalpatternsbrisbane`
+- 5× branded name `Functional Patterns Brisbane`
+- 2× generic `Visit website`, `Website`
+- 1× `Biomechanics experts`, `Chronic Back Pain Specialists Brisbane` (broken), `FP Brisbane`
+- Several insurance provider names (AHM, HCF, NIB, BUPA, Medibank) from a partner page listing insurers
+
+**Over 95% of anchors are branded URL/name variants.** Almost zero keyword-rich anchors like "chronic pain brisbane," "scoliosis treatment," or "biomechanics specialist." The link profile is clean (low spam) but under-leveraged for topical authority — SEO upside from a modest, targeted link-building campaign with better anchors.
+
+**Spam flags to review post-cutover:** ~10 backlinks from high-spam-score directories (toplinksdirectory.com, 2x9.co, bestarticleworld.com, etc., all rank 60–75 spam score). Normal background noise for any domain this age — not urgent, but worth disavowing if we get an unnatural links alert from Google after migration.
+
+Full list: `baseline-backlinks-apr2026.csv`.
+
+---
+
+## AI Search Visibility (ChatGPT Mentions)
+
+**The big finding: FP Brisbane is completely invisible on ChatGPT search, even for queries where the site ranks top-10 on Google.**
+
+Direct domain query for `functionalpatternsbrisbane.com` on ChatGPT returns **zero mentions**. No URLs, no citations, no appearances in AI answers.
+
+Meanwhile, the keywords FP Brisbane already ranks for on Google have substantial ChatGPT search volume:
+
+| Keyword (Google rank for FP) | ChatGPT monthly searches | ChatGPT mentions (total, all sources) | Top cited sources | FP Brisbane cited? |
+|---|---:|---:|---|---|
+| tensor fasciae latae (rank 9 Google) | 2,693 | 157 | Biology Insights, Healthline, Kenhub, Livestrong, Wikipedia, Cleveland Clinic, physio-pedia | No |
+| hyperextended knee (rank 6 Google) | 710 | 34 | Cleveland Clinic, Healthline, MedicineNet, SportsMD, WebMD | No |
+| scapular winging exercises | 12 | 1 | Boston Shoulder Institute, Wikipedia, Cleveland Clinic, Healthline | No |
+| "functional patterns" (ambiguous term) | 1,218 | 95 | Wikipedia, Psychology Today, VeryWellMind, PubMed (most refer to behavioural patterns, not biomechanics) | Parent functionalpatterns.com cited 1× |
+
+**Why zero LLM presence:**
+
+The old Squarespace `robots.txt` blocked GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot, and Google-Extended (confirmed in the April audit). The site's content was literally uncrawlable by AI systems during the window when their indexes were built. Even with strong Google rankings, FP Brisbane was invisible to ChatGPT users asking the same questions.
+
+**What this means for the migration:**
+
+The new Vercel build **allows all AI crawlers** via the deployed `robots.txt` and includes `llms.txt`. Once DNS points to it, FP Brisbane becomes crawlable and citable by AI systems for the first time. This is a meaningful upside the client hasn't benefited from yet — **and it compounds over time** as LLMs re-index the site.
+
+Realistic projection: 4–8 weeks after domain cutover and AI crawler re-indexing, FP Brisbane should start appearing in ChatGPT citations for their strongest long-tail health queries (particularly "tensor fasciae latae," "hyperextended knee," "scapular winging," "kyphosis correction"). This is net-new traffic, not just recovered Google traffic.
+
+---
+
 ## Not Captured in This Baseline
 
-- **Backlink profile:** DataForSEO backlinks endpoint requires a paid add-on subscription (not active on current account). Flag for the customer if they want a backlink snapshot; add-on cost ~$20/month or a one-off audit engagement.
 - **Google Search Console data:** Zac does not have GSC access to the Squarespace property yet. Request access from the client for click/impression data, which is more accurate than DataForSEO's estimates.
 - **Google Analytics 4:** same — needs client access (GA4 property ID `G-EJGMV7FME4` per site-reference doc).
 - **Google Business Profile metrics:** direction requests, call clicks, map views — only visible with GBP access.
+- **Perplexity / Claude / Bing Copilot mention data:** DataForSEO's LLM mentions API only covers ChatGPT and Google (AI Overviews) currently. Assume similar zero-footprint on the other platforms given the same historical robots.txt block.
 
 ---
 
@@ -180,5 +259,6 @@ Top 10 domains that rank alongside FP Brisbane for the same keywords (excluding 
 
 **Raw data:**
 - Full keyword list: `baseline-keywords-apr2026.csv` (478 rows)
+- Backlink list: `baseline-backlinks-apr2026.csv` (top 30 referring domains)
 - Parser script: `scripts/parse_baseline_keywords.py`
-- Source API response: DataForSEO `dataforseo_labs_google_ranked_keywords` + `domain_rank_overview` + `relevant_pages` + `competitors_domain`
+- Source API responses: DataForSEO `dataforseo_labs_google_ranked_keywords` + `domain_rank_overview` + `relevant_pages` + `competitors_domain` + `backlinks_summary` + `backlinks_referring_domains` + `backlinks_anchors` + `ai_opt_llm_ment_agg_metrics`
