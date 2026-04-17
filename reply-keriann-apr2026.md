@@ -16,7 +16,7 @@ Thanks heaps for the feedback — really glad the flow is landing well, and mass
 
 If you'd rather route online enquiries through the individual trainer meet-and-greets (Pietro / Gavin / Steve) just say the word.
 
-**SEO:** Hearing you — plenty of room to move here. I've got the pre-cutover baseline and will do a proper pass once the blog migration has had a week or two to get indexed. Internal linking from the conditions pages into the relevant blogs is the easiest win, and I'll also look at AI-engine-specific structured data so your content has a better shot at surfacing there.
+**SEO:** Hearing you — plenty of room to move here, and with 87% of organic traffic coming through the blog there's no reason to wait. I'll kick off the pass now: internal linking from the conditions pages into the relevant blogs, beefing up schema, and adding AI-engine-friendly structured data so the content has a stronger shot at surfacing in AI results. Once the old Squarespace URLs get 301'd across to the Vercel site, all the existing link equity transfers cleanly.
 
 Cheers,
 Zac

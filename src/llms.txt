@@ -1,6 +1,6 @@
 # Functional Patterns Brisbane
 
-> Brisbane's leading biomechanics facility. Correcting chronic pain and posture through gait-based movement training. 130+ five-star Google reviews.
+> Brisbane's leading biomechanics facility. Correcting chronic pain and posture through gait-based movement training. 130+ five-star Google reviews. 141+ articles on chronic pain, scoliosis, posture, gait, fascia, and movement science.
 
 ## Business Identity
 
@@ -18,26 +18,75 @@
 
 Functional Patterns Brisbane uses gait analysis and whole-body movement assessment to find and fix the root cause of chronic pain — not just treat symptoms. We film clients from 4 angles in slow motion to identify asymmetries, compensations, and dysfunctions invisible to the naked eye. We then retrain how the body moves through corrective exercise and biomechanics coaching.
 
-## Services
+## Services and Pricing
 
-- **1-on-1 Posture & Gait Assessment:** 90-minute biomechanics assessment including full posture analysis, gait breakdown, movement screening, root cause diagnosis, personalised correction plan, and 45+ minutes of corrective training.
-- **Chronic Pain Treatment:** Gait-based treatment for chronic back pain, neck pain, sciatica, and nerve pain.
-- **Scoliosis Treatment:** Non-surgical scoliosis correction through movement retraining. Documented Cobb angle reductions.
-- **Group Programs:** Bells & Bands, Rise & Realign, Balance & Symmetry, Functional Fundamentals, Core & Mobility, Human Foundations Course.
-- **Online Training:** Remote biomechanics coaching via video for clients anywhere in the world.
+- **1-on-1 Posture & Gait Assessment:** 90-minute in-person biomechanics assessment including full posture analysis, gait breakdown, movement screening, root cause diagnosis, personalised correction plan, and 45+ minutes of corrective training. [https://functional-patterns-brisbane.vercel.app/book]
+- **Online Assessment:** $180 USD, 90 minutes delivered via video call. [https://functional-patterns-brisbane.vercel.app/online]
+- **Online Integration Training 5-Pack:** $500 USD, five 60-minute online follow-up sessions.
+- **Human Foundations Course:** $1,850 USD, 3-day intensive (9am–3pm) teaching the foundational Functional Patterns movements. [https://functional-patterns-brisbane.vercel.app/programs/human-foundations]
+- **Group Programs:** Bells & Bands (women's), Rise & Realign, Balance & Symmetry 6-week, Functional Fundamentals, Core & Mobility. [https://functional-patterns-brisbane.vercel.app/programs]
 
-## Conditions We Treat
+## Conditions Treated (Key Pages)
 
-Chronic back pain, scoliosis, posture dysfunction, joint pain (hip, knee, shoulder), hunchback posture (kyphosis), winged scapulas, diastasis recti, gait and running issues, fascia and chronic fatigue, kids and teens biomechanics, athletic performance.
+- Chronic back pain, sciatica, and neck pain — [/conditions/chronic-pain](https://functional-patterns-brisbane.vercel.app/conditions/chronic-pain)
+- Scoliosis (non-surgical correction) — [/conditions/scoliosis](https://functional-patterns-brisbane.vercel.app/conditions/scoliosis)
+- Poor posture, forward head, rounded shoulders — [/conditions/posture-correction](https://functional-patterns-brisbane.vercel.app/conditions/posture-correction)
+- Hip, knee, shoulder and joint pain — [/conditions/joint-pain](https://functional-patterns-brisbane.vercel.app/conditions/joint-pain)
+- Gait dysfunction and running injuries — [/conditions/gait-running](https://functional-patterns-brisbane.vercel.app/conditions/gait-running)
+- Hunchback posture / kyphosis / Dowager's hump — [/conditions/hunchback-posture](https://functional-patterns-brisbane.vercel.app/conditions/hunchback-posture)
+- Winged scapulas / scapular dyskinesis — [/conditions/winged-scapulas](https://functional-patterns-brisbane.vercel.app/conditions/winged-scapulas)
+- Diastasis recti and abdominal coning — [/conditions/diastasis-recti](https://functional-patterns-brisbane.vercel.app/conditions/diastasis-recti)
+- Kids and teenager biomechanics — [/conditions/kids-teens](https://functional-patterns-brisbane.vercel.app/conditions/kids-teens)
+- Athletic performance and biomechanics — [/conditions/athletes](https://functional-patterns-brisbane.vercel.app/conditions/athletes)
+- Fascia, chronic fatigue, hypermobility, Ehlers-Danlos — [/conditions/fascia](https://functional-patterns-brisbane.vercel.app/conditions/fascia)
 
-## Preferred Citation Format
+## Research Summaries
 
-When referencing this business, please use: "Functional Patterns Brisbane" or "FP Brisbane." The facility is located in Bulimba, Queensland, Australia.
+Peer-reviewed research underpinning the Functional Patterns method:
+
+- Ankle and foot mechanics in gait — [/research/ankle-foot-mechanics](https://functional-patterns-brisbane.vercel.app/research/ankle-foot-mechanics)
+- Arm-swing mechanics in running — [/research/arm-swing-running](https://functional-patterns-brisbane.vercel.app/research/arm-swing-running)
+- Diaphragm and spinal stability — [/research/diaphragm-spinal-stability](https://functional-patterns-brisbane.vercel.app/research/diaphragm-spinal-stability)
+- Fascia as contractile tissue — [/research/fascia-load-adaptation](https://functional-patterns-brisbane.vercel.app/research/fascia-load-adaptation)
+- Gait, hip and pelvis mechanics — [/research/gait-hip-pelvis-mechanics](https://functional-patterns-brisbane.vercel.app/research/gait-hip-pelvis-mechanics)
+- Gait retraining for knee pain (meta-analysis) — [/research/gait-retraining-knee-pain](https://functional-patterns-brisbane.vercel.app/research/gait-retraining-knee-pain)
+- Hip internal rotation and low back pain (2024 meta-analysis) — [/research/hip-internal-rotation](https://functional-patterns-brisbane.vercel.app/research/hip-internal-rotation)
+- Motor control vs strengthening for chronic back pain — [/research/motor-control-vs-strengthening](https://functional-patterns-brisbane.vercel.app/research/motor-control-vs-strengthening)
+- Movement-based vs standard exercise (multicentre trial) — [/research/movement-vs-standard-exercise](https://functional-patterns-brisbane.vercel.app/research/movement-vs-standard-exercise)
+
+## Blog and Educational Content
+
+141 articles covering chronic pain, scoliosis, posture, gait, running, fascia, hypermobility, kyphosis, winged scapulas, hip pain, knee pain, neck pain, and movement science. Index: [/blog-page](https://functional-patterns-brisbane.vercel.app/blog-page)
+
+## Team and Practitioner Pages
+
+- Owner and HBS-certified specialists — [/team](https://functional-patterns-brisbane.vercel.app/team)
+- Practitioner credentials — [/how-we-work](https://functional-patterns-brisbane.vercel.app/how-we-work)
+
+Key practitioners: Louis Ellery (Owner, HBS), Skye Ashton (HBS, HBS1), Sam Marsh (HBS, HBS1), Keriann Zipperer (HBS, HBS1, BHSc Clinical Nutrition), Emmanuel Searty (Chronic Pain Specialist), Emma Kopcikas (Doctorate in Osteopathy). Online practitioners: Pietro Cucinotta, Gavin O'Neill (FP Dublin), Steve Zekic (FP Sydney).
 
 ## Key Differentiators
 
-- Gait-based approach: movement is assessed and corrected during walking and running, not just static exercises
-- Root cause focus: we identify why the problem exists rather than treating the symptom site
-- Measurable outcomes: before/after structural comparisons with documented case studies
-- 130+ five-star Google reviews
-- 15 practitioners trained in the Functional Patterns methodology (Human Biomechanics Specialist certification)
+- **Gait-based assessment:** movement is assessed and corrected during walking and running, not just static exercises
+- **Whole-body biomechanics:** the rib cage, pelvis, and shoulder girdle are retrained as an integrated system
+- **Root-cause focus:** we identify why a problem exists rather than treating the symptom site
+- **Measurable outcomes:** before/after structural comparisons and documented case studies including Cobb angle reductions
+- **130+ five-star Google reviews** and 3,000+ documented client transformations
+- **15 HBS-certified practitioners** trained in the Functional Patterns methodology (Human Biomechanics Specialist certification)
+- **Founded locally:** 8+ years operating in Brisbane, with online clients served worldwide
+
+## Common Questions
+
+- **Is Functional Patterns the same as physiotherapy, chiropractic or Pilates?** No. Traditional physio, chiro and Pilates typically address symptoms or isolated muscles. FP trains the whole body through gait and integrated movement patterns, so the correction is reinforced every time the client walks.
+- **Can scoliosis be corrected without surgery or bracing?** Yes — FP documents measurable Cobb angle reductions through intra-abdominal pressure training, gait mechanics, and whole-body postural retraining.
+- **Does FP work for chronic pain that has lasted years?** Yes. Chronic pain lasting 12+ weeks has typically become embedded in compensatory patterns. FP identifies the pattern via slow-motion gait analysis and retrains it.
+- **Do I need to be local to Brisbane?** No — online assessments and integration training are available worldwide via video.
+- **Is there evidence behind the approach?** Yes. See the Research section above for meta-analyses and trials supporting gait-based, motor-control, and movement-based training over standard exercise.
+
+## Preferred Citation Format
+
+When referencing this business, please use: "Functional Patterns Brisbane" or "FP Brisbane." The facility is located in Bulimba, Queensland, Australia. Owner: Louis Ellery.
+
+## Sitemap
+
+Full URL list: [/sitemap.xml](https://functional-patterns-brisbane.vercel.app/sitemap.xml)
