@@ -11,7 +11,7 @@
 
 **Three things to know:**
 
-1. **The site has real, substantial SEO equity — and 87% of it lives on blog URLs that don't exist on the new Vercel build.** 415 of 478 ranked keywords point to `/blog-page/*` paths that 404 on the rebuild. Without a redirect plan or content port, the DNS cutover drops ~87% of organic traffic overnight. This must be resolved before launch.
+1. **The site has real, substantial SEO equity — and the Vercel rebuild is ready to preserve it.** 415 of 478 ranked keywords point to `/blog-page/*` paths. All 141 blog articles have now been ported to the new Vercel build at the **identical URL paths** — zero redirects needed at DNS cutover. The migration-risk blocker flagged in the earlier version of this report is resolved.
 
 2. **The backlink profile is clean but under-leveraged.** 134 backlinks from 71 referring domains — mostly branded URL anchors from sister FP practices in Melbourne, Sydney, and Gold Coast. Almost zero keyword-rich anchor text. Low spam score. This is a solid foundation for a targeted link-building campaign post-launch.
 
@@ -25,6 +25,7 @@
 - **11 keywords in position 1**
 - **134 backlinks** from **71 referring domains**
 - **0 mentions** on ChatGPT — large untapped AI-search opportunity
+- **141 blog articles migrated** to the new Vercel build at matching URL paths (zero-redirect cutover)
 
 ---
 
@@ -118,30 +119,36 @@ The homepage is the #1 single traffic-value page. Everything else is a blog arti
 
 ---
 
-## ⚠️ Migration Risk — /blog-page/ URL Structure
+## Migration Readiness — /blog-page/ URL Structure
 
-**This is the critical finding of the baseline.**
+**The migration risk originally flagged in this section has been resolved.**
 
-The new Vercel build has these content paths:
-- `/` — homepage
-- `/conditions/*` — 11 condition pages
-- `/research/*` — 9 research summaries
-- `/programs/*` — 6 program pages
-- `/team`, `/contact`, `/book`, `/how-we-work`, `/results`, `/online`, `/privacy`
+The first draft of this baseline identified that 415 of the 478 ranked keywords pointed to `/blog-page/*` URLs that did not exist on the Vercel rebuild — meaning a DNS cutover would have dropped ~87% of organic traffic overnight.
 
-The new site does **not** have a `/blog-page/*` section, and the blog articles ranking for 415 of the 478 keywords do not exist in the rebuild.
+**What changed:** all 141 blog articles have been scraped from the live Squarespace site and rebuilt on the Vercel build at the **exact same URL paths** (`/blog-page/{slug}`). Every image was downloaded and served as WebP with JPG fallback. Article schema, OG tags, author attribution, and medical disclaimers were added. A landing page at `/blog-page/` now lists all articles. The "Blog" link was added to the header and footer nav on every existing page.
 
-**If DNS switches without addressing this, expected traffic loss ≈ 80–90% overnight.**
+**Net result:** DNS cutover can proceed with **zero 301 redirects required**. Every ranked URL on the Squarespace site will resolve to a corresponding page on the Vercel build.
 
-### Three options (listed in order of best SEO outcome)
+### What the cutover now looks like
 
-1. **Port the blog content to the new site** — keep the same URL paths (`/blog-page/{slug}`) or use a new `/articles/{slug}` path with 301 redirects. Best SEO outcome. Most work. Realistic effort: 40+ hours if all 60+ articles are migrated; 15 hours if top 20 by ETV are migrated.
+| Ranked URL (Squarespace) | Status on Vercel rebuild |
+|---|---|
+| `/` (homepage) | Live — new design, stronger on-page SEO |
+| `/blog-page/{slug}` (141 articles) | All live at same path — 0 redirects |
+| `/correct-posture` | Redirects to `/conditions/posture-correction` |
+| `/back-pain-brisbane` (currently 404 on Squarespace) | Live at `/conditions/chronic-pain` |
+| `/boxing-for-balance` | Live at `/programs/balance-and-symmetry` |
+| `/scoliosisresults` | Live at `/results` |
+| `/trainer-credentials` | Live at `/team` |
 
-2. **301-redirect every blog URL to a thematically similar new page** — e.g., `/blog-page/how-to-fix-neck-humps-a-biomechanical-approach` → `/conditions/hunchback-posture`. Retains some authority (maybe 40–60% of ranking) but loses the specific long-tail matches (users searching "exercises neck hump" won't land on exact-match content anymore). Effort: 4–6 hours mapping + redirect config.
+A small mapping file (~10 redirects) handles the service-page URL changes. The bulk of traffic (the blog) sits on identical paths.
 
-3. **Run both sites in parallel** — keep the Squarespace blog live on `blog.functionalpatternsbrisbane.com` (or similar), main site runs on Vercel at apex. Preserves 100% of blog SEO with zero content work. Downside: ongoing Squarespace subscription + a visual split-brain between the modern Vercel site and the older-looking Squarespace blog. Effort: ~2 hours.
+### Remaining cutover considerations
 
-**Recommendation:** option 3 as a stopgap for the first 4–8 weeks (so the cutover doesn't tank traffic), then option 1 as the real fix — port the top 20 blog posts by ETV to the new site over the following month, 301-redirecting the old URLs as they land.
+- **Keep the Vercel deploy stable for 48 hours before DNS switch** so the staging URL is warm and crawlable
+- **Submit the Vercel sitemap to Google Search Console** immediately after DNS switch
+- **Monitor 404s in the first 2 weeks** via the Vercel logs — anything unexpected gets a redirect added
+- **Re-run this DataForSEO pull at 4 and 8 weeks** post-cutover to verify rankings have transferred cleanly
 
 ---
 
