@@ -78,7 +78,7 @@ If we switch DNS tomorrow, all of these would 404 on the new site and we'd lose 
 
 Happy to jump on a call to talk through it — also happy for you to think on it and come back to me. Either way, we shouldn't switch DNS until we've picked a path.
 
-I've attached the full baseline report so you can see exactly what's ranking and where the traffic comes from. The CSV has all 478 keywords.
+I've attached a full baseline report (PDF) so you can see exactly what's ranking, where the traffic comes from, what the backlinks look like, and where the AI visibility gap sits. The raw keyword and backlink CSVs are also attached if you want to sort through them yourself.
 
 Cheers,
 Zac
@@ -86,7 +86,7 @@ Zac
 ---
 
 **Attachments referenced:**
-- `baseline-seo-apr2026.md` — full report (includes backlinks + AI visibility sections)
+- `baseline-seo-functionalpatternsbrisbane-com-apr2026.pdf` — branded Arclight PDF report (at `C:/Users/zacen/Python/vibe_coding/arclight_digital/audit-reports/`)
 - `baseline-keywords-apr2026.csv` — all 478 ranking keywords with position, search volume, landing URL, and estimated traffic value
 - `baseline-backlinks-apr2026.csv` — top 30 referring domains
 
