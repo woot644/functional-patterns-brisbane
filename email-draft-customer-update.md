@@ -97,4 +97,4 @@ Zac
 - Consider whether to send the full baseline report + CSV as attachments or link via Google Drive. CSV is 478 rows — fine as an attachment.
 - Request GSC + GA4 + GBP access in a follow-up (not in this email — keeps the focus on the decision that needs making). Real first-party data will beat DataForSEO estimates for the next pull.
 - If she asks for a cost on option 1 (content port): rough estimate 15–20 hrs to port top 20 articles at your hourly rate.
-- Vercel build from commit `72fac4c` is live at `functional-patterns-brisbane.vercel.app` — confirm before sending.
+- Vercel build from commit `72fac4c` is live at `www.functionalpatternsbrisbane.com` — confirm before sending.

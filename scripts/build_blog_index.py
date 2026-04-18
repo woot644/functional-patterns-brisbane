@@ -15,7 +15,7 @@ ROOT = Path(__file__).parent.parent
 SCRAPED = ROOT / "scripts" / "scraped"
 OUT = ROOT / "src" / "blog-page" / "index.html"
 IMG_DIR = ROOT / "src" / "images" / "blog"
-SITE_URL = "https://functional-patterns-brisbane.vercel.app"
+SITE_URL = "https://www.functionalpatternsbrisbane.com"
 
 
 def load_posts() -> list[dict]:

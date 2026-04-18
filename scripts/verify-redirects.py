@@ -10,19 +10,25 @@ Reports only failures + a summary. Known-dead Squarespace pages (already 404 on
 the live site at scrape time) are excluded from the expected-200 pool.
 
 Usage:
-    python scripts/verify-redirects.py https://functional-patterns-brisbane.vercel.app
+    python scripts/verify-redirects.py https://www.functionalpatternsbrisbane.com
     python scripts/verify-redirects.py https://www.functionalpatternsbrisbane.com   # post-DNS cutover
 
 Exit code: 0 if all green, 1 if any failures (suitable for CI gating).
 """
 from __future__ import annotations
 
+import os
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import urlparse, urlunparse
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
+
+# Optional: Vercel Deployment Protection bypass. Set VERCEL_PROTECTION_BYPASS
+# in the environment; the value is sent as the x-vercel-protection-bypass
+# header on every request. Never commit the secret itself.
+BYPASS_SECRET = os.environ.get("VERCEL_PROTECTION_BYPASS", "")
 
 ROOT = Path(__file__).resolve().parent.parent
 URL_LIST = ROOT / "backup-squarespace" / "_urls.txt"
@@ -59,10 +65,18 @@ def normalise(url: str, target_base: str) -> str | None:
     return urlunparse((tb.scheme, tb.netloc, path, "", "", ""))
 
 
+def headers() -> dict[str, str]:
+    h = {"User-Agent": UA}
+    if BYPASS_SECRET:
+        h["x-vercel-protection-bypass"] = BYPASS_SECRET
+        h["x-vercel-set-bypass-cookie"] = "true"
+    return h
+
+
 def check(url: str) -> tuple[str, str, int, str]:
     """Returns (url, outcome, final_status, detail). outcome in {ok, redirect-ok, fail}."""
     try:
-        req = Request(url, headers={"User-Agent": UA}, method="HEAD")
+        req = Request(url, headers=headers(), method="HEAD")
         with urlopen(req, timeout=TIMEOUT) as r:
             status = r.status
             if status == 200:
@@ -80,7 +94,7 @@ def check(url: str) -> tuple[str, str, int, str]:
                 loc = urlunparse((p.scheme, p.netloc, loc, "", "", ""))
             # fetch target, expect 200
             try:
-                req2 = Request(loc, headers={"User-Agent": UA}, method="HEAD")
+                req2 = Request(loc, headers=headers(), method="HEAD")
                 with urlopen(req2, timeout=TIMEOUT) as r2:
                     if r2.status == 200:
                         return url, "redirect-ok", status, f"-> {loc} (200)"

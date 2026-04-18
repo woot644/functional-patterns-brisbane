@@ -118,7 +118,7 @@ CONDITIONS_META = {
     },
 }
 
-BASE_URL = "https://functional-patterns-brisbane.vercel.app"
+BASE_URL = "https://www.functionalpatternsbrisbane.com"
 
 
 def extract_text(pattern: str, html: str, flags: int = 0) -> str:

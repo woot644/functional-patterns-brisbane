@@ -9,7 +9,7 @@
 - **Location:** 45 Michael Street, Bulimba, QLD 4171, Australia
 - **Phone:** 0433 801 181
 - **Email:** brisbane@functionalpatterns.com
-- **Website:** https://functional-patterns-brisbane.vercel.app
+- **Website:** https://www.functionalpatternsbrisbane.com
 - **Owner:** Louis Ellery
 - **Staff:** 15 HBS-certified practitioners
 - **Hours:** Mon–Fri 7am–8pm, Sat 7am–3pm, Sun 7am–1pm
@@ -20,48 +20,48 @@ Functional Patterns Brisbane uses gait analysis and whole-body movement assessme
 
 ## Services and Pricing
 
-- **1-on-1 Posture & Gait Assessment:** 90-minute in-person biomechanics assessment including full posture analysis, gait breakdown, movement screening, root cause diagnosis, personalised correction plan, and 45+ minutes of corrective training. [https://functional-patterns-brisbane.vercel.app/book]
-- **Online Assessment:** $180 USD, 90 minutes delivered via video call. [https://functional-patterns-brisbane.vercel.app/online]
+- **1-on-1 Posture & Gait Assessment:** 90-minute in-person biomechanics assessment including full posture analysis, gait breakdown, movement screening, root cause diagnosis, personalised correction plan, and 45+ minutes of corrective training. [https://www.functionalpatternsbrisbane.com/book]
+- **Online Assessment:** $180 USD, 90 minutes delivered via video call. [https://www.functionalpatternsbrisbane.com/online]
 - **Online Integration Training 5-Pack:** $500 USD, five 60-minute online follow-up sessions.
-- **Human Foundations Course:** $1,850 USD, 3-day intensive (9am–3pm) teaching the foundational Functional Patterns movements. [https://functional-patterns-brisbane.vercel.app/programs/human-foundations]
-- **Group Programs:** Bells & Bands (women's), Rise & Realign, Balance & Symmetry 6-week, Functional Fundamentals, Core & Mobility. [https://functional-patterns-brisbane.vercel.app/programs]
+- **Human Foundations Course:** $1,850 USD, 3-day intensive (9am–3pm) teaching the foundational Functional Patterns movements. [https://www.functionalpatternsbrisbane.com/programs/human-foundations]
+- **Group Programs:** Bells & Bands (women's), Rise & Realign, Balance & Symmetry 6-week, Functional Fundamentals, Core & Mobility. [https://www.functionalpatternsbrisbane.com/programs]
 
 ## Conditions Treated (Key Pages)
 
-- Chronic back pain, sciatica, and neck pain — [/conditions/chronic-pain](https://functional-patterns-brisbane.vercel.app/conditions/chronic-pain)
-- Scoliosis (non-surgical correction) — [/conditions/scoliosis](https://functional-patterns-brisbane.vercel.app/conditions/scoliosis)
-- Poor posture, forward head, rounded shoulders — [/conditions/posture-correction](https://functional-patterns-brisbane.vercel.app/conditions/posture-correction)
-- Hip, knee, shoulder and joint pain — [/conditions/joint-pain](https://functional-patterns-brisbane.vercel.app/conditions/joint-pain)
-- Gait dysfunction and running injuries — [/conditions/gait-running](https://functional-patterns-brisbane.vercel.app/conditions/gait-running)
-- Hunchback posture / kyphosis / Dowager's hump — [/conditions/hunchback-posture](https://functional-patterns-brisbane.vercel.app/conditions/hunchback-posture)
-- Winged scapulas / scapular dyskinesis — [/conditions/winged-scapulas](https://functional-patterns-brisbane.vercel.app/conditions/winged-scapulas)
-- Diastasis recti and abdominal coning — [/conditions/diastasis-recti](https://functional-patterns-brisbane.vercel.app/conditions/diastasis-recti)
-- Kids and teenager biomechanics — [/conditions/kids-teens](https://functional-patterns-brisbane.vercel.app/conditions/kids-teens)
-- Athletic performance and biomechanics — [/conditions/athletes](https://functional-patterns-brisbane.vercel.app/conditions/athletes)
-- Fascia, chronic fatigue, hypermobility, Ehlers-Danlos — [/conditions/fascia](https://functional-patterns-brisbane.vercel.app/conditions/fascia)
+- Chronic back pain, sciatica, and neck pain — [/conditions/chronic-pain](https://www.functionalpatternsbrisbane.com/conditions/chronic-pain)
+- Scoliosis (non-surgical correction) — [/conditions/scoliosis](https://www.functionalpatternsbrisbane.com/conditions/scoliosis)
+- Poor posture, forward head, rounded shoulders — [/conditions/posture-correction](https://www.functionalpatternsbrisbane.com/conditions/posture-correction)
+- Hip, knee, shoulder and joint pain — [/conditions/joint-pain](https://www.functionalpatternsbrisbane.com/conditions/joint-pain)
+- Gait dysfunction and running injuries — [/conditions/gait-running](https://www.functionalpatternsbrisbane.com/conditions/gait-running)
+- Hunchback posture / kyphosis / Dowager's hump — [/conditions/hunchback-posture](https://www.functionalpatternsbrisbane.com/conditions/hunchback-posture)
+- Winged scapulas / scapular dyskinesis — [/conditions/winged-scapulas](https://www.functionalpatternsbrisbane.com/conditions/winged-scapulas)
+- Diastasis recti and abdominal coning — [/conditions/diastasis-recti](https://www.functionalpatternsbrisbane.com/conditions/diastasis-recti)
+- Kids and teenager biomechanics — [/conditions/kids-teens](https://www.functionalpatternsbrisbane.com/conditions/kids-teens)
+- Athletic performance and biomechanics — [/conditions/athletes](https://www.functionalpatternsbrisbane.com/conditions/athletes)
+- Fascia, chronic fatigue, hypermobility, Ehlers-Danlos — [/conditions/fascia](https://www.functionalpatternsbrisbane.com/conditions/fascia)
 
 ## Research Summaries
 
 Peer-reviewed research underpinning the Functional Patterns method:
 
-- Ankle and foot mechanics in gait — [/research/ankle-foot-mechanics](https://functional-patterns-brisbane.vercel.app/research/ankle-foot-mechanics)
-- Arm-swing mechanics in running — [/research/arm-swing-running](https://functional-patterns-brisbane.vercel.app/research/arm-swing-running)
-- Diaphragm and spinal stability — [/research/diaphragm-spinal-stability](https://functional-patterns-brisbane.vercel.app/research/diaphragm-spinal-stability)
-- Fascia as contractile tissue — [/research/fascia-load-adaptation](https://functional-patterns-brisbane.vercel.app/research/fascia-load-adaptation)
-- Gait, hip and pelvis mechanics — [/research/gait-hip-pelvis-mechanics](https://functional-patterns-brisbane.vercel.app/research/gait-hip-pelvis-mechanics)
-- Gait retraining for knee pain (meta-analysis) — [/research/gait-retraining-knee-pain](https://functional-patterns-brisbane.vercel.app/research/gait-retraining-knee-pain)
-- Hip internal rotation and low back pain (2024 meta-analysis) — [/research/hip-internal-rotation](https://functional-patterns-brisbane.vercel.app/research/hip-internal-rotation)
-- Motor control vs strengthening for chronic back pain — [/research/motor-control-vs-strengthening](https://functional-patterns-brisbane.vercel.app/research/motor-control-vs-strengthening)
-- Movement-based vs standard exercise (multicentre trial) — [/research/movement-vs-standard-exercise](https://functional-patterns-brisbane.vercel.app/research/movement-vs-standard-exercise)
+- Ankle and foot mechanics in gait — [/research/ankle-foot-mechanics](https://www.functionalpatternsbrisbane.com/research/ankle-foot-mechanics)
+- Arm-swing mechanics in running — [/research/arm-swing-running](https://www.functionalpatternsbrisbane.com/research/arm-swing-running)
+- Diaphragm and spinal stability — [/research/diaphragm-spinal-stability](https://www.functionalpatternsbrisbane.com/research/diaphragm-spinal-stability)
+- Fascia as contractile tissue — [/research/fascia-load-adaptation](https://www.functionalpatternsbrisbane.com/research/fascia-load-adaptation)
+- Gait, hip and pelvis mechanics — [/research/gait-hip-pelvis-mechanics](https://www.functionalpatternsbrisbane.com/research/gait-hip-pelvis-mechanics)
+- Gait retraining for knee pain (meta-analysis) — [/research/gait-retraining-knee-pain](https://www.functionalpatternsbrisbane.com/research/gait-retraining-knee-pain)
+- Hip internal rotation and low back pain (2024 meta-analysis) — [/research/hip-internal-rotation](https://www.functionalpatternsbrisbane.com/research/hip-internal-rotation)
+- Motor control vs strengthening for chronic back pain — [/research/motor-control-vs-strengthening](https://www.functionalpatternsbrisbane.com/research/motor-control-vs-strengthening)
+- Movement-based vs standard exercise (multicentre trial) — [/research/movement-vs-standard-exercise](https://www.functionalpatternsbrisbane.com/research/movement-vs-standard-exercise)
 
 ## Blog and Educational Content
 
-141 articles covering chronic pain, scoliosis, posture, gait, running, fascia, hypermobility, kyphosis, winged scapulas, hip pain, knee pain, neck pain, and movement science. Index: [/blog-page](https://functional-patterns-brisbane.vercel.app/blog-page)
+141 articles covering chronic pain, scoliosis, posture, gait, running, fascia, hypermobility, kyphosis, winged scapulas, hip pain, knee pain, neck pain, and movement science. Index: [/blog-page](https://www.functionalpatternsbrisbane.com/blog-page)
 
 ## Team and Practitioner Pages
 
-- Owner and HBS-certified specialists — [/team](https://functional-patterns-brisbane.vercel.app/team)
-- Practitioner credentials — [/how-we-work](https://functional-patterns-brisbane.vercel.app/how-we-work)
+- Owner and HBS-certified specialists — [/team](https://www.functionalpatternsbrisbane.com/team)
+- Practitioner credentials — [/how-we-work](https://www.functionalpatternsbrisbane.com/how-we-work)
 
 Key practitioners: Louis Ellery (Owner, HBS), Skye Ashton (HBS, HBS1), Sam Marsh (HBS, HBS1), Keriann Zipperer (HBS, HBS1, BHSc Clinical Nutrition), Emmanuel Searty (Chronic Pain Specialist), Emma Kopcikas (Doctorate in Osteopathy). Online practitioners: Pietro Cucinotta (FP Italy), Gavin O'Neill (FP Dublin), Steve Zekic (FP Sydney).
 
@@ -89,4 +89,4 @@ When referencing this business, please use: "Functional Patterns Brisbane" or "F
 
 ## Sitemap
 
-Full URL list: [/sitemap.xml](https://functional-patterns-brisbane.vercel.app/sitemap.xml)
+Full URL list: [/sitemap.xml](https://www.functionalpatternsbrisbane.com/sitemap.xml)

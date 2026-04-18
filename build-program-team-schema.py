@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 SRC = ROOT / "src"
-BASE_URL = "https://functional-patterns-brisbane.vercel.app"
+BASE_URL = "https://www.functionalpatternsbrisbane.com"
 
 MARKER_START = "<!-- Generated Schema Start -->"
 MARKER_END = "<!-- Generated Schema End -->"

@@ -26,7 +26,7 @@ ROOT = Path(__file__).parent.parent
 SCRAPED_DIR = ROOT / "scripts" / "scraped"
 OUT_DIR = ROOT / "src" / "blog-page"
 IMG_DIR = ROOT / "src" / "images" / "blog"
-SITE_URL = "https://functional-patterns-brisbane.vercel.app"
+SITE_URL = "https://www.functionalpatternsbrisbane.com"
 
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 IMG_DIR.mkdir(parents=True, exist_ok=True)

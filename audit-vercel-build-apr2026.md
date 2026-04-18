@@ -1,6 +1,6 @@
 # Comprehensive Website Audit — Vercel Build
 ## Functional Patterns Brisbane
-**functional-patterns-brisbane.vercel.app**
+**www.functionalpatternsbrisbane.com**
 **Prepared by Arclight Digital** | 16 April 2026
 
 ---
@@ -315,7 +315,7 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://functional-patterns-brisbane.vercel.app/sitemap.xml
+Sitemap: https://www.functionalpatternsbrisbane.com/sitemap.xml
 ```
 
 **sitemap.xml:** 35 URLs across 4 sections:

@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).parent / "src"
-SITE_URL = "https://functional-patterns-brisbane.vercel.app"
+SITE_URL = "https://www.functionalpatternsbrisbane.com"
 
 # Map HTML file (relative to src/) -> og image filename (relative to images/og/)
 PAGE_TO_OG: dict[str, str] = {

@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent.parent
 SCRAPED = ROOT / "scripts" / "scraped"
 SITEMAP = ROOT / "src" / "sitemap.xml"
-SITE_URL = "https://functional-patterns-brisbane.vercel.app"
+SITE_URL = "https://www.functionalpatternsbrisbane.com"
 TODAY = "2026-04-17"
 
 
