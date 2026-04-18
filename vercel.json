@@ -88,7 +88,7 @@
     { "source": "/trainer-credentials", "destination": "/team", "statusCode": 301 },
     { "source": "/trainer-credentials-old", "destination": "/team", "statusCode": 301 },
 
-    { "source": "/research-summaries-functional-patterns", "destination": "/research", "statusCode": 301 },
+    { "source": "/research-summaries-functional-patterns", "destination": "/results#research", "statusCode": 301 },
     { "source": "/research-summaries-functional-patterns/diaphragm-intra-abdominal-pressure-spinal-stability", "destination": "/research/diaphragm-spinal-stability", "statusCode": 301 },
     { "source": "/research-summaries-functional-patterns/fascia-mechanotransduction-load-adaptation", "destination": "/research/fascia-load-adaptation", "statusCode": 301 },
     { "source": "/research-summaries-functional-patterns/gait-retraining-can-ease-knee-pain-amp-improve-joint-biomechanics-evidence-from-meta-analysis", "destination": "/research/gait-retraining-knee-pain", "statusCode": 301 },
