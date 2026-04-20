@@ -98,7 +98,7 @@ def render_card(post: dict) -> str:
         if date_display else ""
     )
 
-    return f'''    <a href="{slug}" class="group card-dark overflow-hidden hover:border-accent-500/40 transition-all">
+    return f'''    <a href="/blog-page/{slug}" class="group card-dark overflow-hidden hover:border-accent-500/40 transition-all">
       <div class="relative overflow-hidden">
         {img_html}
       </div>
