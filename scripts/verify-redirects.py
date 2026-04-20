@@ -48,9 +48,10 @@ SKIP_PREFIXES = (
     "/cart",  # commerce, not migrated
 )
 
-UA = "Mozilla/5.0 (compatible; FPBrisbane-RedirectVerifier/1.0)"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 TIMEOUT = 15
-WORKERS = 8
+WORKERS = 2
+DELAY_BETWEEN = 0.4  # seconds between submissions, keeps rate below Vercel's bot thresholds
 
 
 def normalise(url: str, target_base: str) -> str | None:
@@ -131,8 +132,12 @@ def main() -> int:
     redirected = 0
     failures: list[tuple[str, int, str]] = []
 
+    import time as _t
     with ThreadPoolExecutor(max_workers=WORKERS) as ex:
-        futures = [ex.submit(check, u) for u in urls]
+        futures = []
+        for u in urls:
+            futures.append(ex.submit(check, u))
+            _t.sleep(DELAY_BETWEEN)
         done = 0
         for fut in as_completed(futures):
             url, outcome, status, detail = fut.result()
