@@ -1,94 +1,101 @@
-# Squarespace → Vercel Cutover — Handover
+# Squarespace → Vercel Cutover — Post-Cutover Summary
 
-**Paused:** 2026-04-18 evening — Squarespace login blocked (password reset needed).
-**Resume trigger:** Squarespace admin access restored.
-
----
-
-## Current state — what's done
-
-### Content & build (all deployed to Vercel)
-- **Full Squarespace backup** at `backup-squarespace/` (gitignored) — 282 pages, 5,645 assets. Restorable if needed.
-- **15 missing blog posts ported** from the original migration. All old `/blog-page/<slug>` URLs now resolve on Vercel (blog = 87% of organic traffic, so slug parity is critical).
-- **95 explicit 301 redirects** in `vercel.json` covering every old structural slug → new path (conditions, programs, research, team, booking flow, ebook pages, -old duplicates, tag pages, case studies).
-- **All canonical / og:url / JSON-LD / sitemap / robots.txt / llms.txt / build-script references** swapped from `functional-patterns-brisbane.vercel.app` to `www.functionalpatternsbrisbane.com` — 2,055 occurrences across 206 files.
-- **End-to-end verification:** 268/268 old URLs resolve to 200 on the Vercel deploy (via `scripts/verify-redirects.py`).
-
-### Vercel project settings
-- **Deployment Protection:** disabled on production (only preview deployments protected).
-- **Domains added:**
-  - `www.functionalpatternsbrisbane.com` → Production (primary)
-  - `functionalpatternsbrisbane.com` → 308 Permanent Redirect → www
-  - `functional-patterns-brisbane.vercel.app` → Production (still active as alias)
-- Both real domains currently flag **Invalid Configuration** — expected, DNS hasn't been updated yet.
-- **Firewall system bypass rule** active on IP `114.72.34.40` (dev machine) for the verifier.
-
-### Git state
-- Branch: `master`
-- Latest commits on master, all pushed:
-  1. `Squarespace -> Vercel cutover: port 15 blog posts, 95 301 redirects, full backup`
-  2. `Fix /research-summaries-functional-patterns redirect`
-  3. `Swap vercel.app placeholder to www.functionalpatternsbrisbane.com`
-- All Vercel deploys passing.
+**Status:** ✅ Live on `www.functionalpatternsbrisbane.com` as of 2026-04-20.
+**DNS flip performed:** 2026-04-20 evening (AEST). Propagation + SSL issuance completed within minutes.
+**Verification:** 268/268 old URLs return 200 on the live domain.
 
 ---
 
-## What's left — in order
+## Final DNS configuration (at Squarespace)
 
-### 1. DNS cutover at Squarespace (requires client credentials)
-
-Log into Squarespace → **Settings → Domains** → `functionalpatternsbrisbane.com` → **DNS Settings**.
-
-**Before changing anything, screenshot the existing DNS records** so we can restore in 30 seconds if needed.
-
-Set these two records:
+Only two records changed from the original Squarespace setup. All email/verification records stay as they were.
 
 | Type | Name | Value |
 |---|---|---|
-| **A** | `@` | `216.150.1.1` |
-| **CNAME** | `www` | `e7eb037fabed336b.vercel-dns-017.com.` |
+| A | `@` | `216.150.1.1` |
+| CNAME | `www` | `e7eb037fabed336b.vercel-dns-017.com.` |
 
-**Delete** the existing A records at `@` (4 Squarespace IPs) and the existing CNAME at `www` (probably `ext-sq.squarespace.com`).
-
-**Do NOT touch** MX records (email), TXT records (SPF/DKIM/domain verification), or any other CNAMEs on subdomains. Only A `@` and CNAME `www` change.
-
-### 2. Wait for DNS propagation + SSL issuance
-- Vercel auto-detects within minutes to an hour.
-- "Invalid Configuration" badges flip to "Valid Configuration" when picked up.
-- SSL certificates (Let's Encrypt) issue automatically after validation — another few minutes.
-
-### 3. Re-run verifier against real domain
-
-```bash
-python scripts/verify-redirects.py https://www.functionalpatternsbrisbane.com
-```
-
-If Vercel's DDoS system challenges the verifier again, create another **System Bypass** rule:
-- Firewall → Add New → System Bypass
-- IP: `114.72.34.40/32`
-- Domain: `www.functionalpatternsbrisbane.com`
-- Save
-
-Expected: 268/268 pass.
-
-### 4. Submit sitemap to Google Search Console
-- GSC → Sitemaps → Add `https://www.functionalpatternsbrisbane.com/sitemap.xml`
-- Re-verify property ownership if needed (DNS TXT method cleanest post-migration).
-
-### 5. Monitor — first 2 weeks
-- **GSC Coverage report** daily — expect some temp crawl errors while Google re-indexes; persistent 404s need investigation.
-- **GA4 + GSC sessions** — organic traffic should hold within ±15% of baseline. Larger drop = something broken.
-- **Key redirects manual spot-check** — first 3 days, hit 5–10 high-traffic old URLs in browser and confirm they land correctly.
+**Deleted:** the "Squarespace Defaults" DNS preset (4 A records + CNAME `www` → `ext-sq.squarespace.com`).
+**Untouched:** Google Workspace MX (`smtp.google.com`), Amazon SES DKIM/MX on `mail.` subdomain, Brevo code, HubSpot `go.` + `www.go.` CNAMEs, DMARC, SPF, all `_cf-custom-hostname` + `google-site-verification` TXT records.
 
 ---
 
-## Rollback plan (if something goes wrong post-DNS)
+## What was completed
 
-**Fast rollback:** restore the original Squarespace DNS records (the ones you screenshotted). DNS reverts within minutes to an hour. Vercel stays live at the `*.vercel.app` URL unaffected.
+### Pre-cutover build + redirects (committed before 2026-04-20)
+- 15 missing blog posts ported from original migration (blog drives ~87% of organic traffic)
+- 95 explicit 301 redirects in `vercel.json` covering every structural slug change
+- All canonical / og:url / JSON-LD / sitemap / robots.txt / llms.txt references updated to `www.functionalpatternsbrisbane.com`
+- Full Squarespace backup at `backup-squarespace/` (gitignored) — 282 pages, 5,645 assets
+- End-to-end verifier `scripts/verify-redirects.py` passing 268/268
 
-**Partial rollback:** if only certain redirects misbehave, edit `vercel.json` locally, push to master — Vercel redeploys in under 60 seconds.
+### DNS cutover + verification (2026-04-20)
+- DNS records swapped at Squarespace
+- Both real domains flipped to "Valid Configuration" in Vercel + SSL cert issued within minutes
+- 268/268 verifier pass against live domain (via `scripts/_verify_with_google_dns.py` pattern to bypass stale ISP cache)
+- Redirect verifier rate-limit tweaks committed
 
-**Full site recovery:** the Squarespace backup at `backup-squarespace/` has 282 HTML pages + 5,645 assets. Not a live site but recoverable content.
+### Search Console + Analytics (2026-04-20)
+- GSC property added as URL-prefix `https://www.functionalpatternsbrisbane.com` (auto-verified via existing Google account association)
+- Sitemap submitted: `sitemap.xml` — 178 pages discovered
+- GA4 tag `G-6XPMFN4H62` swept across the 15 blog posts that were missing it — all 193 HTML pages now track
+- Old Google Ads conversion tag deliberately *not* ported — it was firing sitewide on every pageview (broken setup), so any data in the Ads account was meaningless
+
+### Content corrections (2026-04-21)
+- Balance & Symmetry instructor: Harj → Emmanuel (bio, avatar initial, image alt, trainer card)
+- Real trainer photos wired up for the 3 active programs:
+  - `src/images/emmanuel.webp` → Balance & Symmetry
+  - `src/images/keriann.webp` → Bells & Bands
+  - `src/images/skye.webp` → Rise & Realign (pulled from the old `/chronicpainexperts` staff page)
+- 3 paused programs hidden from nav + listing (pages kept live for direct-link access):
+  - Functional Fundamentals
+  - Core & Mobility
+  - Human Foundations Course
+  - Stripped from desktop + mobile nav dropdowns on all 193 HTML pages
+  - Removed cards from `/programs`, schema ItemList trimmed, sitemap + llms.txt cleaned
+  - Trainer cards on `/programs` page retained (Sam, Keriann, Emmanuel) so the "coaches" section still feels populated
+- Fixed pre-existing wrong meta description on `balance-and-symmetry.html` (was describing Bells & Bands)
+
+---
+
+## Currently running programs
+
+| Program | Instructor | Schedule | Page |
+|---|---|---|---|
+| Rise & Realign | Skye Ashton | Wednesdays 6am | `/programs/rise-and-realign` |
+| Balance & Symmetry | Emmanuel | Wednesdays 6pm | `/programs/balance-and-symmetry` |
+| Bells & Bands (ladies) | Keriann Zipperer | Thursdays 10am | `/programs/bells-and-bands` |
+
+Paused (pages live but unlinked): Functional Fundamentals, Core & Mobility, Human Foundations. Easy to re-surface by re-adding their nav/listing entries when a program returns.
+
+---
+
+## Monitoring checklist — first 2 weeks
+
+- **GSC → Indexing → Pages** — daily. Expect some temporary "Not indexed" while Google re-crawls. Persistent 404s need investigation.
+- **GSC → Performance** — clicks + impressions should hold within ±15% of baseline. Larger drop = investigate.
+- **GSC → Sitemaps** — watch "Discovered" → "Indexed" progression over days.
+- **GA4 → Reports → Realtime** — sanity check tracking is firing on all page types (home, blog, program, condition).
+- **GA4 organic sessions** — week-over-week vs pre-cutover baseline.
+- **Spot-check 5–10 high-traffic blog URLs in a browser** over first 3 days.
+
+---
+
+## Rollback plan (still valid if something breaks)
+
+**Fast rollback (DNS):** restore the original Squarespace DNS records. Screenshots of the original DNS state are in the conversation trail from 2026-04-20. DNS reverts within minutes to an hour.
+
+**Partial rollback (redirect or content):** edit `vercel.json` or the relevant page, push to master — Vercel redeploys in under 60 seconds.
+
+**Full site recovery:** Squarespace backup at `backup-squarespace/` has 282 HTML pages + 5,645 assets. Not a live site, but restorable content.
+
+---
+
+## Open follow-ups
+
+1. **GA4 property decision** — currently landing in `G-6XPMFN4H62` (new property, no history). Old Squarespace site used `G-EJGMV7FME4`. If Louis wants multi-year continuity, swap the tag ID site-wide. If the new property was deliberate, leave it.
+2. **Google Ads conversion tracking** — the old broken sitewide-firing tag was not ported. If Louis actively runs Ads and needs real conversion attribution, set up proper event-based tracking on actual conversion moments (booking confirmations, contact form submits, ebook downloads).
+3. **Blog post CTA in `explosive-power-is-built-on-mechanics-not-just-intensity.html`** still has a "Register for Functional Fundamentals at FP BNE" link (line 151) pointing at the now-hidden program page. Repoint to `/programs` or `/contact` when convenient.
 
 ---
 
@@ -96,54 +103,34 @@ Expected: 268/268 pass.
 
 ```bash
 # Re-run verifier against any host
-python scripts/verify-redirects.py https://<hostname>
+python scripts/verify-redirects.py https://www.functionalpatternsbrisbane.com
 
-# Re-crawl Squarespace (resume-safe — skips already-saved)
-python scripts/backup-squarespace.py
+# If local ISP DNS is stale, use the Google-DNS override script pattern
+# (create scripts/_verify_with_google_dns.py using dnspython → 8.8.8.8)
 
-# Port additional missing blog posts, if discovered later
+# Port additional blog posts later
 # 1. Add slug to scripts/blog-urls.txt
-# 2. Scrape via Firecrawl:
 python scripts/scrape_blog.py
-# 3. Build HTML:
 python scripts/transform_blog_post.py <slug>
-# 4. Apply SEO passes:
 python build-blog-seo-pass.py
 python build-blog-alt-text.py
 ```
 
 ---
 
-## Known issues / gotchas
+## Known gotchas (kept for reference)
 
-- **Squarespace email:** if client uses `@functionalpatternsbrisbane.com` email through Squarespace, changing the A record doesn't break it — email runs off MX records which we're leaving alone. But if they use Squarespace's webmail interface, that stops working post-cutover. Confirm email setup before flip if unsure.
-- **Vercel DDoS auto-challenges** on bursty traffic (~200+ requests/min from one IP). The verifier now runs slowly (2 workers, 0.4s delay) to stay under the threshold. If it fires anyway, the system bypass rule covers us.
-- **Blog `amp` slugs:** some old blog URLs contain the literal string `amp` (from `&amp;` in the Squarespace title-to-slug transform). These are preserved exactly — don't "fix" them or you break the URL.
-- **`/case-studies/blog-post-title-*`**: Squarespace placeholder test posts. Redirected to `/results`. Safe.
-- **3 URLs 404 on Squarespace itself** (already dead at scrape time, no redirect added): `/small-group-class-programs`, `/fpresults`, `/back-pain-brisbane`. Ignored by verifier.
-
----
-
-## Ambiguous redirects (pending client confirmation — currently pointing at closest topical page)
-
-These were redirected on my lean since the client priority was blog preservation. Review if client wants different behavior:
-
-| Old URL | Currently redirects to | Alternative |
-|---|---|---|
-| `/the-quiz` | `/book` | Build a quiz page |
-| `/free-selfmassage-ebook` | `/blog-page` | Build an ebook landing |
-| `/scoliosisebook` | `/conditions/scoliosis` | Build an ebook landing |
-| `/case-studies` + `/case-studies/*` | `/results` | Build case-studies section |
-| `/cart` | `/` (via implicit home handling) | Drop (410) if no commerce planned |
-| `/terms-of-service-online-training` | `/privacy` | Build a `/terms` page |
-| `/boxing-for-balance` | `/programs` | Drop |
+- **Local ISP resolvers lag Vercel's anycast DNS by 10–60 min post-flip.** Symptom: browser shows `DNS_PROBE_FINISHED_NXDOMAIN`, but `dnschecker.org` shows green globally. Fix: switch to `8.8.8.8` or wait for TTL.
+- **Vercel DDoS auto-challenges** on bursty verifier traffic. Verifier now runs with 2 workers and 0.4s delay between submissions to stay under the threshold.
+- **Blog `amp` slugs** — some old blog URLs contain the literal string `amp` (from `&amp;` in Squarespace title-to-slug transform). Preserved exactly; do not "fix" them.
+- **Squarespace email interface** would stop working post-cutover, but Louis uses Google Workspace (MX `smtp.google.com`) so real email was unaffected. Webmail via Squarespace wasn't in use.
 
 ---
 
-## Contact / context
+## Project refs
 
 - **Client:** Louis Ellery (Functional Patterns Brisbane)
-- **Project:** `C:\Users\Zac\Python\vibe_coding\functional-patterns-brisbane`
-- **GitHub:** `github.com/woot644/functional-patterns-brisbane`
+- **Repo:** `github.com/woot644/functional-patterns-brisbane` — `master` branch auto-deploys to Vercel
 - **Vercel project:** `woot644s-projects/functional-patterns-brisbane` (Pro plan)
-- **Squarespace backup:** `backup-squarespace/` (in repo, gitignored — 282 pages, 5,645 assets)
+- **Live site:** https://www.functionalpatternsbrisbane.com
+- **Local path:** `C:\Users\Zac\Python\vibe_coding\functional-patterns-brisbane`
