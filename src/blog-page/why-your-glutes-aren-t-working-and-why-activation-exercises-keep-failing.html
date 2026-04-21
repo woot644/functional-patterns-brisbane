@@ -56,11 +56,54 @@
 </head>
 <body>
 
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-dark-950/90 backdrop-blur-md border-b border-white/5">
+    <nav class="px-4 sm:px-6 lg:px-8">
+      <div class="container-narrow flex items-center justify-between h-20 sm:h-28">
+        <a href="../" class="text-white font-bold text-lg tracking-tight">
+          <picture><source type="image/webp" srcset="../images/fp-logo-full.webp"><img src="../images/fp-logo-full.jpg" alt="Functional Patterns Brisbane" loading="eager" width="1362" height="1072" class="h-14 sm:h-28 w-auto"></picture>
+        </a>
+        <div class="hidden lg:flex items-center gap-6">
+          <a href="../" class="nav-link">Home</a>
+          <div class="relative group"><a href="../how-we-work" class="nav-link">How We Work</a><div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block z-50"><div class="bg-dark-800 border border-white/10 rounded-lg shadow-xl py-2 w-56"><a href="../book" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">1-on-1 Assessment</a><a href="../online" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Train Online</a><div class="border-t border-white/10 mt-1 pt-1"><a href="../how-we-work" class="block px-4 py-2 text-sm text-accent-500 hover:text-accent-400">Our Approach</a></div></div></div></div>
+          <div class="relative group"><a href="../what-we-treat" class="nav-link">What We Treat</a><div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block z-50"><div class="bg-dark-800 border border-white/10 rounded-lg shadow-xl py-2 w-56"><a href="../conditions/chronic-pain" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Chronic Pain</a><a href="../conditions/scoliosis" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Scoliosis</a><a href="../conditions/posture-correction" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Posture Correction</a><a href="../conditions/joint-pain" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Joint Pain</a><a href="../conditions/gait-running" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Gait &amp; Running</a><a href="../conditions/hunchback-posture" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Hunchback Posture</a><a href="../conditions/winged-scapulas" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Winged Scapulas</a><a href="../conditions/diastasis-recti" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Diastasis Recti</a><a href="../conditions/kids-teens" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Kids &amp; Teens</a><a href="../conditions/athletes" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Athletes</a><a href="../conditions/fascia" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Fascia &amp; Chronic Fatigue</a><div class="border-t border-white/10 mt-1 pt-1"><a href="../what-we-treat" class="block px-4 py-2 text-sm text-accent-500 hover:text-accent-400">View All Conditions</a></div></div></div></div>
+          <a href="../results" class="nav-link">Results</a>
+          <a href="." class="nav-link">Blog</a>
+          <div class="relative group"><a href="../programs" class="nav-link">Group Programs</a><div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block z-50"><div class="bg-dark-800 border border-white/10 rounded-lg shadow-xl py-2 w-56"><a href="../programs/bells-and-bands" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Bells &amp; Bands (Ladies)</a><a href="../programs/rise-and-realign" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Rise &amp; Realign</a><a href="../programs/balance-and-symmetry" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Balance &amp; Symmetry</a><a href="../programs/functional-fundamentals" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Functional Fundamentals</a><a href="../programs/core-and-mobility" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Core &amp; Mobility</a><a href="../programs/human-foundations" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5">Human Foundations Course</a><div class="border-t border-white/10 mt-1 pt-1"><a href="../programs" class="block px-4 py-2 text-sm text-accent-500 hover:text-accent-400">View All Programs</a></div></div></div></div>
+          <a href="../team" class="nav-link">Our Team</a>
+          <a href="https://impulse-rehab-centre.au1.cliniko.com/bookings?business_id=73368#service" target="_blank" rel="noopener" class="btn-primary py-2.5 px-5 text-xs">Book Assessment</a>
+        </div>
+        <div class="flex items-center gap-3 lg:hidden">
+          <a href="https://impulse-rehab-centre.au1.cliniko.com/bookings?business_id=73368#service" target="_blank" rel="noopener" class="btn-primary py-2 px-4 text-xs">Book</a>
+          <button id="mobile-menu-btn" class="p-2 text-white" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-white/5 bg-dark-950 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain">
+      <div class="px-4 py-4 space-y-1">
+        <a href="../" class="block py-3 nav-link">Home</a>
+        <a href="../how-we-work" class="block py-3 nav-link font-medium">How We Work</a><div class="pl-4 space-y-0"><a href="../book" class="block py-2 text-sm text-gray-400 hover:text-white">1-on-1 Assessment</a><a href="../online" class="block py-2 text-sm text-gray-400 hover:text-white">Train Online</a></div>
+        <a href="../what-we-treat" class="block py-3 nav-link font-medium">What We Treat</a><div class="pl-4 space-y-0"><a href="../conditions/chronic-pain" class="block py-2 text-sm text-gray-400 hover:text-white">Chronic Pain</a><a href="../conditions/scoliosis" class="block py-2 text-sm text-gray-400 hover:text-white">Scoliosis</a><a href="../conditions/posture-correction" class="block py-2 text-sm text-gray-400 hover:text-white">Posture Correction</a><a href="../conditions/joint-pain" class="block py-2 text-sm text-gray-400 hover:text-white">Joint Pain</a><a href="../conditions/gait-running" class="block py-2 text-sm text-gray-400 hover:text-white">Gait &amp; Running</a><a href="../conditions/hunchback-posture" class="block py-2 text-sm text-gray-400 hover:text-white">Hunchback Posture</a><a href="../conditions/winged-scapulas" class="block py-2 text-sm text-gray-400 hover:text-white">Winged Scapulas</a><a href="../conditions/diastasis-recti" class="block py-2 text-sm text-gray-400 hover:text-white">Diastasis Recti</a><a href="../conditions/kids-teens" class="block py-2 text-sm text-gray-400 hover:text-white">Kids &amp; Teens</a><a href="../conditions/athletes" class="block py-2 text-sm text-gray-400 hover:text-white">Athletes</a><a href="../conditions/fascia" class="block py-2 text-sm text-gray-400 hover:text-white">Fascia &amp; Chronic Fatigue</a></div>
+        <a href="../results" class="block py-3 nav-link">Results</a>
+        <a href="." class="block py-3 nav-link">Blog</a>
+        <a href="../programs" class="block py-3 nav-link font-medium">Group Programs</a><div class="pl-4 space-y-0"><a href="../programs/bells-and-bands" class="block py-2 text-sm text-gray-400 hover:text-white">Bells &amp; Bands (Ladies)</a><a href="../programs/rise-and-realign" class="block py-2 text-sm text-gray-400 hover:text-white">Rise &amp; Realign</a><a href="../programs/balance-and-symmetry" class="block py-2 text-sm text-gray-400 hover:text-white">Balance &amp; Symmetry</a><a href="../programs/functional-fundamentals" class="block py-2 text-sm text-gray-400 hover:text-white">Functional Fundamentals</a><a href="../programs/core-and-mobility" class="block py-2 text-sm text-gray-400 hover:text-white">Core &amp; Mobility</a><a href="../programs/human-foundations" class="block py-2 text-sm text-gray-400 hover:text-white">Human Foundations Course</a></div>
+        <a href="../team" class="block py-3 nav-link">Our Team</a>
+        <a href="../contact" class="block py-3 nav-link">Contact</a>
+        <a href="../online" class="block py-3 nav-link">Online Training</a>
+        <a href="tel:0433801181" class="block py-3 text-accent-500 font-semibold">0433 801 181</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
   <section class="relative min-h-[50vh] flex items-center bg-dark-950 overflow-hidden pt-20">
     <div class="absolute inset-0">
       <picture>
         <source type="image/webp" srcset="../images/blog/why-your-glutes-aren-t-working-and-why-activation-exercises-keep-failing/1.webp">
-        <img src="../images/blog/why-your-glutes-aren-t-working-and-why-activation-exercises-keep-failing/1.jpg" alt="Glutes and posture — body mechanics" loading="eager" fetchpriority="high" class="w-full h-full object-cover opacity-40">
+        <img src="../images/blog/why-your-glutes-aren-t-working-and-why-activation-exercises-keep-failing/1.jpg" alt="Glutes and posture" loading="eager" fetchpriority="high" class="w-full h-full object-cover opacity-40">
       </picture>
       <div class="absolute inset-0 bg-gradient-to-r from-dark-950 via-dark-950/75 via-[40%] to-transparent"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-dark-950/30"></div>
@@ -83,17 +126,13 @@
       <article class="prose-article">
         <p class="text-gray-700 text-base leading-relaxed mb-5">Most people who come into our clinic say the same thing.</p>
 
-<p class="text-gray-700 text-base leading-relaxed mb-5">They've done the banded walks.
-They've done the glute bridges.
-They've spent time trying to "activate" their glutes before training.</p>
+<p class="text-gray-700 text-base leading-relaxed mb-5">They've done the banded walks. They've done the glute bridges. They've spent time trying to "activate" their glutes before training.</p>
 
 <p class="text-gray-700 text-base leading-relaxed mb-5">Sometimes they can even feel them working.</p>
 
 <p class="text-gray-700 text-base leading-relaxed mb-5">But when it actually matters — walking, running, lifting — nothing changes.</p>
 
-<p class="text-gray-700 text-base leading-relaxed mb-5">Their hips still feel tight.
-Their lower back still takes over.
-And the same issues keep coming back.</p>
+<p class="text-gray-700 text-base leading-relaxed mb-5">Their hips still feel tight. Their lower back still takes over. And the same issues keep coming back.</p>
 
 <p class="text-gray-700 text-base leading-relaxed mb-5">At that point, it's easy to assume your glutes are weak or not firing properly.</p>
 
@@ -137,8 +176,6 @@ And the same issues keep coming back.</p>
 
 <p class="text-gray-700 text-base leading-relaxed mb-5">If you train outside of that context, it's very hard for the body to transfer what you've practised into real movement.</p>
 
-<hr class="my-10 border-gray-200">
-
 <h3 class="text-dark-900 text-xl font-bold mb-3 mt-8">It focuses on sensation instead of function</h3>
 
 <p class="text-gray-700 text-base leading-relaxed mb-5">Feeling a muscle working isn't the same as using it well.</p>
@@ -148,8 +185,6 @@ And the same issues keep coming back.</p>
 <p class="text-gray-700 text-base leading-relaxed mb-5">That's because function depends on timing and coordination, not just contraction.</p>
 
 <p class="text-gray-700 text-base leading-relaxed mb-5">If the timing is off, the body will always fall back to whatever pattern is easiest.</p>
-
-<hr class="my-10 border-gray-200">
 
 <h3 class="text-dark-900 text-xl font-bold mb-3 mt-8">It ignores positioning</h3>
 
@@ -189,21 +224,12 @@ And the same issues keep coming back.</p>
 
 <p class="text-gray-700 text-base leading-relaxed mb-5">That starts with:</p>
 
-<h3 class="text-dark-900 text-xl font-bold mb-3 mt-8">Repositioning the pelvis and ribcage</h3>
-
-<p class="text-gray-700 text-base leading-relaxed mb-5">So the glutes have a stable base to work from</p>
-
-<h3 class="text-dark-900 text-xl font-bold mb-3 mt-8">Restoring rotation</h3>
-
-<p class="text-gray-700 text-base leading-relaxed mb-5">Because walking and running rely on controlled rotation through the hips and torso</p>
-
-<h3 class="text-dark-900 text-xl font-bold mb-3 mt-8">Training single-leg control</h3>
-
-<p class="text-gray-700 text-base leading-relaxed mb-5">Since that's where the glutes do most of their work</p>
-
-<h3 class="text-dark-900 text-xl font-bold mb-3 mt-8">Integrating it into gait</h3>
-
-<p class="text-gray-700 text-base leading-relaxed mb-5">So whatever you improve actually shows up when you move through the day</p>
+<ul class="list-disc pl-6 space-y-2 mb-6 text-gray-700">
+<li class="leading-relaxed"><p class="text-gray-700 text-base leading-relaxed mb-5"><strong class="text-dark-900 font-semibold">Repositioning the pelvis and ribcage</strong> — So the glutes have a stable base to work from</p></li>
+<li class="leading-relaxed"><p class="text-gray-700 text-base leading-relaxed mb-5"><strong class="text-dark-900 font-semibold">Restoring rotation</strong> — Because walking and running rely on controlled rotation through the hips and torso</p></li>
+<li class="leading-relaxed"><p class="text-gray-700 text-base leading-relaxed mb-5"><strong class="text-dark-900 font-semibold">Training single-leg control</strong> — Since that's where the glutes do most of their work</p></li>
+<li class="leading-relaxed"><p class="text-gray-700 text-base leading-relaxed mb-5"><strong class="text-dark-900 font-semibold">Integrating it into gait</strong> — So whatever you improve actually shows up when you move through the day</p></li>
+</ul>
 
 <p class="text-gray-700 text-base leading-relaxed mb-5">When these pieces come together, people usually don't need to think about "activating" their glutes anymore.</p>
 
@@ -261,16 +287,65 @@ And the same issues keep coming back.</p>
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="bg-dark-900 px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
     <div class="container-narrow text-center">
       <p class="text-accent-500 text-xs font-semibold uppercase tracking-[0.2em] mb-3">Apply This to Your Body</p>
       <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Ready to Fix the Root Cause?</h2>
       <p class="text-gray-300 mb-8 max-w-xl mx-auto">Book a 90-minute posture and gait assessment. We identify the movement patterns driving your pain and build a correction plan specific to you.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://impulse-rehab-centre.au1.cliniko.com/bookings?business_id=73368#service" target="_blank" rel="noopener" class="btn-primary">Book an Assessment</a>
+        <a href="../book" class="btn-primary">Book an Assessment</a>
         <a href="../results" class="btn-outline">See Our Results</a>
       </div>
     </div>
   </section>
+
+  <footer class="bg-dark-950 border-t border-white/5 pt-16 pb-8 px-4">
+    <div class="container-narrow">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="text-white font-bold text-lg mb-4"><picture><source type="image/webp" srcset="../images/fp-logo-full.webp"><img src="../images/fp-logo-full.jpg" alt="Functional Patterns Brisbane" loading="eager" width="1362" height="1072" class="h-14 sm:h-28 w-auto"></picture></div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">Brisbane's leading biomechanics facility. Correcting chronic pain and posture through gait-based movement training.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../how-we-work" class="text-gray-400 hover:text-white transition-colors">How We Work</a></li>
+            <li><a href="../what-we-treat" class="text-gray-400 hover:text-white transition-colors">What We Treat</a></li>
+            <li><a href="../results" class="text-gray-400 hover:text-white transition-colors">Results</a></li>
+            <li><a href="." class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">About</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../team" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+            <li><a href="../book" class="text-gray-400 hover:text-white transition-colors">Book Assessment</a></li>
+            <li><a href="../contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+            <li><a href="../privacy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="tel:0433801181" class="text-gray-400 hover:text-white transition-colors">0433 801 181</a></li>
+            <li><a href="mailto:brisbane@functionalpatterns.com" class="text-gray-400 hover:text-white transition-colors">brisbane@functionalpatterns.com</a></li>
+            <li><span class="text-gray-400">45 Michael Street<br>Bulimba, QLD 4171</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-xs text-gray-600 mt-6 leading-relaxed max-w-2xl mx-auto text-center">Individual results vary. The content on this website is for educational purposes and does not constitute medical advice. Consult a qualified health professional before making changes to your health management.</p>
+      <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+        <p>&copy; 2026 Functional Patterns Brisbane. All rights reserved.</p>
+        <p>Mon&ndash;Fri 7am&ndash;8pm &bull; Sat 7am&ndash;3pm &bull; Sun 7am&ndash;1pm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
