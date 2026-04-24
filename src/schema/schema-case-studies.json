@@ -106,7 +106,20 @@
     "@type": "AggregateRating",
     "@id": "https://www.functionalpatternsbrisbane.com/results#rating",
     "itemReviewed": {
-      "@id": "https://www.functionalpatternsbrisbane.com/#business"
+      "@type": "LocalBusiness",
+      "@id": "https://www.functionalpatternsbrisbane.com/#business",
+      "name": "Functional Patterns Brisbane",
+      "image": "https://www.functionalpatternsbrisbane.com/images/training-lunge.jpg",
+      "telephone": "+61433801181",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "45 Michael Street",
+        "addressLocality": "Bulimba",
+        "addressRegion": "QLD",
+        "postalCode": "4171",
+        "addressCountry": "AU"
+      }
     },
     "ratingValue": "5",
     "reviewCount": "130",
