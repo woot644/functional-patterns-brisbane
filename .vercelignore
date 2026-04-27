@@ -1,0 +1,44 @@
+# Keep the deploy upload tight — only ship what the site needs.
+# vercel.json points outputDirectory to src/, but the build env still
+# uploads the whole repo unless we exclude things here.
+
+# 2.6 GB of Squarespace export — reference only, never deployed
+backup-squarespace/
+
+# Local audits, baselines, screenshots, working docs
+audit/
+audit-vercel-build-apr2026.md
+baseline-*.csv
+baseline-*.md
+blog-alt-audit.md
+brand-board-*.png
+client-update-*.md
+CUTOVER-HANDOVER.md
+email-draft-*.md
+fp-*-preview.png
+fp-*-check.png
+fp-hero-v*.png
+fp-book-v*.png
+fp-results-preview.png
+original-header.png
+our-header.png
+reply-keriann-*.md
+site-reference.md
+
+# Build / generation scripts (run locally, not on Vercel)
+build-*.py
+convert-to-webp.py
+generate-og-images.py
+update-og-meta.py
+wrap-img-with-picture.py
+inject-favicon-credit.py
+
+# Local data dumps & client files
+client/
+client-update-*.md
+pages/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
